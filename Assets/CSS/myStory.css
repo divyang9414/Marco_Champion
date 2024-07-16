@@ -1,0 +1,181 @@
+/* ADVERTISEMENT START */
+/* ADVERTISEMENT END */
+
+/* MAIN BANNER START */
+/* MAIN BANNER END */
+
+/* ABOUT START */
+/* ABOUT END */
+
+/* SOCIAL MEDIA START */
+/* SOCIAL MEDIA END */
+
+/* TESTIMONIALS START START */
+/* TESTIMONIALS START END */
+
+/* FOOTER START */
+/* FOOTER END */
+
+/* Base styles for all screens */
+.responsive-text {
+  font-size: 20px;
+}
+
+.responsive-image {
+  position: absolute;
+  bottom: 0px;
+  left: 16px;
+}
+
+.bioStoryImage{
+  height: 400px;
+}
+
+.motiv {
+  background-image: url("../Images/homebio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.motivList li{
+  display: flex;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.visible {
+  /* display: inline; */
+  opacity: 1;
+}
+
+.passion {
+  background-image: url("../Images/Background-Special.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.followSocialMedia {
+  background-image: url("../Images/homebio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Extra Small (XS) screens */
+@media (min-width: 320px) {
+}
+
+/* Small (SM) screens */
+@media (min-width: 375px) {
+  .responsive-text {
+    font-size: 24px;
+  }
+  .bioStoryImage{
+    height: 460px;
+  }
+  .responsive-image {
+    left: 32px;
+  }
+}
+
+/* Medium (MD) screens */
+@media (min-width: 425px) {
+  .responsive-text {
+    font-size: 28px;
+  }
+  .bioStoryImage{
+    height: 500px;
+  }
+  .responsive-image {
+    left: 48px;
+  }
+}
+
+/* Large (LG) screens */
+@media (min-width: 576px) {
+  .responsive-text {
+    font-size: 36px;
+  }
+  .bioStoryImage{
+    height: auto;
+  }
+  .responsive-image {
+    left: 0px;
+    bottom: 222px;
+    opacity: 0.4;
+    scale: 1.7;
+    z-index: -1;
+  }
+}
+
+/* Extra Large (XL) screens */
+@media (min-width: 640px) {
+  .responsive-text {
+    font-size: 40px;
+  }
+  .responsive-image {
+    bottom: 172px;
+    scale: 1.5;
+  }
+}
+
+/* 2XL screens */
+@media (min-width: 768px) {
+  .responsive-text {
+    font-size: 44px;
+  }
+  .bioStoryImage{
+    /* height: 860px; */
+  }
+  .responsive-image {
+    bottom: 42px;
+    scale: 1.1;
+  }
+}
+
+/* 3XL screens */
+@media (min-width: 992px) {
+  .responsive-text {
+    font-size: 34px;
+  }
+  .bioStoryImage{
+    /* height: auto; */
+  }
+  .responsive-image {
+    bottom: 282px;
+    left: 20px;
+    opacity: 1;
+    scale: 2;
+  }
+}
+
+/* 4XL screens */
+@media (min-width: 1200px) {
+  .responsive-text {
+    font-size: 40px;
+  }
+  .responsive-image {
+    bottom: 202px;
+    left: 26px;
+    scale: 1.6;
+  }
+}
+
+/* 5XL screens */
+@media (min-width: 1400px) {
+  .responsive-image {
+    bottom: 96px;
+    left: 96px;
+    scale: 1.25;
+  }
+}
+
+/* 6XL screens */
+@media (min-width: 1536px) {
+}

@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font1: "SpriteGraffiti", sans-serif;
+  --font2: "Blanka", sans-serif;
+}
+
+.container {
+  width: 1320px;
+  max-width: 1320px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "SpriteGraffiti";
+  src: url("../Fonts/SpriteGraffiti-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.fontSpriteGraffiti {
+  font-family: var(--font1);
+  letter-spacing: 0.5px;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Blanka";
+  src: url("../Fonts/Blanka-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.fontBlanka {
+  font-family: var(--font2);
+  letter-spacing: 0.5px;
+  font-weight: 100;
+}
+
+/* FOOTER START */
+.footer {
+  background-color: black;
+}
+.footerIcon img {
+  width: 50px;
+}
+/* FOOTER END */
+
+/* Extra Small (XS) screens */
+@media (min-width: 320px) {
+  .container {
+    max-width: 300px !important;
+  }
+  .footerBox {
+    flex-direction: column;
+  }
+  .footerBoxRight img {
+    width: 96px;
+    bottom: 0px;
+    right: -8px;
+  }
+}
+
+/* Small (SM) screens */
+@media (min-width: 375px) {
+  .container {
+    max-width: 350px !important;
+  }
+  .footerBoxRight img {
+    width: 110px;
+  }
+}
+
+/* Medium (MD) screens */
+@media (min-width: 425px) {
+  .container {
+    max-width: 400px !important;
+  }
+}
+
+/* Large (LG) screens */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px !important;
+  }
+  .footerBox {
+    flex-direction: row;
+  }
+  .footerBoxLeft {
+    width: 60%;
+  }
+  .footerBoxRight {
+    width: 40%;
+  }
+  .footerBoxRight ul {
+    align-content: center;
+  }
+  .footerBoxRight img {
+    width: 160px;
+  }
+}
+
+/* Extra Large (XL) screens */
+@media (min-width: 640px) {
+  .container {
+    max-width: 600px !important;
+  }
+  .footerBoxRight img {
+    width: 200px;
+    bottom: 4px;
+  }
+}
+
+/* 2XL screens */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+  .footerBoxRight img {
+    width: 300px;
+    bottom: 8px;
+  }
+}
+
+/* 3XL screens */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px !important;
+  }
+  .footerBoxLeft {
+    width: 50%;
+  }
+  .footerBoxRight {
+    width: 50%;
+  }
+  .footerBoxRight img {
+    width: 300px;
+    bottom: -12px;
+  }
+  .footerBoxRight ul {
+    gap: 24px;
+    justify-content: end;
+    /* justify-content: none; */
+  }
+  .footerBoxRight ul li {
+    /* width: 23%;
+    text-align: center; */
+    width: auto;
+    text-align: center;
+  }
+}
+
+/* 4XL screens */
+/* @media (min-width: 1024px) {
+  .container {
+    max-width: 960px !important;
+  }
+  .footerBoxLeft {
+    width: 50%;
+  }
+  .footerBoxRight {
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footerBoxRight ul {
+    gap: 24px;
+    justify-content: none;
+  }
+  .footerBoxRight ul li {
+    width: auto;
+    text-align: center;
+  }
+} */
+
+/* 4XL screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+  .footerBoxRight ul {
+    gap: 40px;
+  }
+}
+
+/* 5XL screens */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px !important;
+  }
+}
+
+/* 6XL screens */
+@media (min-width: 1536px) {
+  /* .container {
+    max-width: 1440px !important;
+  } */
+}

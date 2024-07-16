@@ -1,0 +1,287 @@
+/* ADVERTISEMENT START */
+.advertisement {
+  background-image: url("../Images/topHeader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* ADVERTISEMENT END */
+
+/* MAIN BANNER START */
+.main_banner {
+  background-image: url("../Images/HomePage3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* MAIN BANNER END */
+
+/* ABOUT START */
+.upcomingShow {
+  background-image: url("../Images/Background-Special.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about {
+  background-image: url("../Images/homebio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.joinComunity {
+  background-image: url("../Images/Background-Special.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.winnerCircle {
+  background-image: url("../Images/homebio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* ABOUT END */
+
+/* SOCIAL MEDIA START */
+.social {
+  background-image: url("../Images/Background-Special.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.iconContainer {
+  background-color: white;
+  background-image: url("../Images/stay_connected.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* SOCIAL MEDIA END */
+
+/* Extra Small (XS) screens */
+@media (min-width: 320px) {
+  .aboutImageBox {
+    height: 250px;
+  }
+  .about_image {
+    width: 220px;
+    left: calc(50% - 220px / 2);
+  }
+  .winnerCircle {
+    height: 400px;
+  }
+  .winCircle {
+    width: 320px;
+    top: 60px;
+  }
+  .winSubCircle1 {
+    border-radius: 50%;
+    width: 200px;
+    left: calc(50% - 200px / 2);
+    top: 140px;
+  }
+  .winSubCircle2 {
+    border-radius: 50%;
+    width: 150px;
+    left: calc(50% - 150px / 2);
+    top: 165px;
+  }
+  .exclusiveCircle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: calc(50% - 100px / 2);
+    top: 190px;
+  }
+  .exclusiveCircle span {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+  .iconContainer {
+    padding: 30px 0;
+    gap: 16px;
+  }
+  .iconContainer div span {
+    display: none;
+  }
+  .social {
+    padding: 20px 12px;
+  }
+}
+
+/* Small (SM) screens */
+@media (min-width: 375px) {
+  .aboutImageBox {
+    height: 300px;
+  }
+  .aboutImage {
+    width: 270px;
+    left: calc(50% - 270px / 2);
+  }
+  .winCircle {
+    width: 375px;
+    top: 40px;
+  }
+}
+
+/* Medium (MD) screens */
+@media (min-width: 425px) {
+  .aboutImageBox {
+    height: 330px;
+  }
+  .aboutImage {
+    width: 300px;
+    left: calc(50% - 300px / 2);
+  }
+  .winCircle {
+    width: 425px;
+    top: 30px;
+  }
+}
+
+/* Large (LG) screens */
+@media (min-width: 576px) {
+  .aboutImageBox {
+    height: 480px;
+  }
+  .aboutImage {
+    width: 420px;
+    left: calc(50% - 420px / 2);
+  }
+  .winnerCircle {
+    height: 550px;
+  }
+  .winCircle {
+    width: 576px;
+    top: 20px;
+  }
+  .winSubCircle1 {
+    width: 350px;
+    left: calc(50% - 350px / 2);
+    top: 140px;
+  }
+  .winSubCircle2 {
+    width: 270px;
+    left: calc(50% - 270px / 2);
+    top: 180px;
+  }
+  .exclusiveCircle {
+    width: 180px;
+    height: 180px;
+    left: calc(50% - 180px / 2);
+    top: 225px;
+  }
+  .iconContainer {
+    gap: 32px;
+  }
+  .exclusiveCircle span {
+    font-size: 18px;
+    padding: 0 40px;
+  }
+}
+
+/* Extra Large (XL) screens */
+@media (min-width: 640px) {
+  .winnerCircle {
+    height: 580px;
+  }
+  .winCircle {
+    width: 640px;
+  }
+  .winSubCircle1 {
+    width: 350px;
+    left: calc(50% - 350px / 2);
+    top: 160px;
+  }
+  .winSubCircle2 {
+    width: 270px;
+    left: calc(50% - 270px / 2);
+    top: 200px;
+  }
+  .exclusiveCircle {
+    top: 245px;
+  }
+  .iconContainer {
+    gap: 50px;
+    padding: 45px 0;
+  }
+}
+
+/* 2XL screens */
+@media (min-width: 768px) {
+  .aboutImageBox {
+    height: 600px;
+  }
+  .aboutImage {
+    width: 520px;
+    left: calc(50% - 520px / 2);
+  }
+  .winnerCircle {
+    height: 700px;
+  }
+  .winCircle {
+    width: 768px;
+    left: calc(50% - 768px / 2);
+    top: 20px;
+  }
+  .winSubCircle1 {
+    width: 450px;
+    left: calc(50% - 450px / 2);
+    top: 180px;
+  }
+  .winSubCircle2 {
+    width: 330px;
+    left: calc(50% - 330px / 2);
+    top: 240px;
+  }
+  .exclusiveCircle {
+    width: 200px;
+    height: 200px;
+    left: calc(50% - 200px / 2);
+    top: 305px;
+  }
+  .exclusiveCircle span {
+    font-size: 22px;
+    padding: 0 60px;
+  }
+  .social {
+    padding: 30px 30px;
+  }
+}
+
+/* 3XL screens */
+@media (min-width: 992px) {
+  .iconContainer div span {
+    display: inline;
+  }
+  .iconContainer {
+    gap: 16px;
+    padding: 120px 0;
+  }
+  .social {
+    padding: 60px 30px;
+  }
+}
+
+/* 4XL screens */
+@media (min-width: 1200px) {
+  .aboutImageBox{
+    height: auto;
+    position: relative;
+  }
+  .aboutImage {
+    width: 625px;
+    left: calc(50% - 625px / 2);
+  }
+}
+
+/* 5XL screens */
+@media (min-width: 1400px) {
+}
+
+/* 6XL screens */
+@media (min-width: 1536px) {
+}

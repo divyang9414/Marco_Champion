@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>DMarco</title>
+
+    <!-- FAVICON ICON -->
+    <link rel="icon" href="Assets/Images/Favicon.svg">
+
+    <!-- BASE -->
+    <base href="">
+
+    <!-- META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="Assets/CSS/aos.css">
+
+    <!-- TRANSFONTER -->
+    <link rel="stylesheet" href="Assets/Fonts/stylesheet.css">
+
+    <!-- FANCY ICONS -->
+    <link rel="stylesheet" href="Assets/CSS/fontawesome.all.min.css">
+    <link rel="stylesheet" href="Assets/Fonts/BSicons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Assets/Fonts/Boxicons/boxicons.css">
+    <link rel="stylesheet" href="Assets/Fonts/Remixicon/remixicon.css">
+    <link rel="stylesheet" href="Assets/Fonts/Flaticons/flaticons.css">
+    <link rel="stylesheet" href="Assets/Fonts/Icofonts/icofont.min.css">
+
+    <!-- MY-CSS -->
+    <link rel="stylesheet" href="Assets/CSS/global.css">
+    <link rel="stylesheet" href="Assets/CSS/reprogram.css">
+    <link rel="stylesheet" href="Assets/CSS/self-Jquery-style.css">
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    screens: {
+                        xs: '320px',
+                        msm: '425px',
+                        sm: '576px',
+                        lg: '992px',
+                        xl: '1200px',
+                        xxl: '1400px',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <nav id="nav" class="nav bg-black">
+        <div class="w-[90%] mx-auto">
+            <div class="flex justify-between items-center p-3">
+                <img src="./Assets/Images/logo.svg" alt="" width="100px">
+                <button id="nav-toggle" class="md:hidden text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                <div id="nav-links" class="hidden md:opacity-[1] md:flex md:items-center md:w-auto">
+                    <ul class="flex flex-col gap-4 md:flex-row md:flex-wrap justify-center">
+                        <li class="p-2">
+                            <a href="./index.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Home
+                            </a>
+                        </li>
+                        <li class="p-2">
+                            <a href="./myStory.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">My
+                                Story
+                            </a>
+                        </li>
+                        <li class="p-2">
+                            <a href="./reprogram.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#fff] font-semibold no-underline">Reprogram
+                            </a>
+                        </li>
+                        <li class="p-2">
+                            <a href="#" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Shop
+                            </a>
+                        </li>
+                        <li class="p-2">
+                            <a href="#" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <main>
+        <!-- REPROGRAM BANNER START -->
+        <section id="reprogram_banner" class="reprogram_banner pb-[30px]">
+            <div class="container">
+                <div class="relative">
+                    <img src="./Assets/Images/reprogram/HomePage2.png" class="w-[70%] mx-auto pb-[40px] sm:pb-[70px] md:pb-[90px] lg:pb-[120px] xl:pb-[140px] relative z-[2]"
+                        alt="">
+                    <div class="bg-white w-full absolute bottom-0 z-[1] p-3 sm:p-5 md:p-6 lg:p-8">
+                        <img src="./Assets/Images/reprogram/Disconnect-to-Reconnect.png" class="w-full" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- REPROGRAM BANNER END -->
+
+        <!-- CHANGE THOUGHT START -->
+        <section id="changeThought" class="changeThought py-[30px] bg-black">
+            <div class="container">
+                <h2 class="text-white text-[26px] sm:text-[30px] md:text-[34px] lg:text-[38px] xl:text-[40px] font-semibold text-center py-8 sm:py-12 md:py-16 lg:py-18 xl:py-20">"CHANGE YOUR THOUGHTS<br> CHANGE YOUR LIFE"</h2>
+            </div>
+        </section>
+        <!-- CHANGE THOUGHT END -->
+
+        <!-- FOLLOW SOCIAL MEDIA START -->
+        <section id="bootcampTools" class="bootcampTools py-5 md:py-12 relative  overflow-hidden">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="container relative z-10">
+                <div class="px-5 text-center">
+                    <h1
+                        class="fontBlanka text-white text-[18px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-8 sm:mb-12 text-center">
+                        TOOLS USED IN BOOTCAMP
+                    </h1>
+                </div>
+                <div class="py-6 px-3 flex items-center">
+                    <button id="custom-prev-arrow flex justify-between items-center" class="w-[10%] sm:w-[5%]">
+                        <i
+                            class="ri-arrow-left-s-line text-[#ffffff80] text-[30px] lg:text-[45px] xl:text-[60px] ml-[-4px]"></i>
+                    </button>
+                    <div class="toolSwiper w-[80%] sm:w-[90%] flex flex-wrap gap-y-12 px-2 sm:px-[0] gap-x-5 flex-grow">
+                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5 mx-2">
+                            <img src="./Assets/Images/myStory/1.png" alt="">
+                        </div>
+                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5 mx-2">
+                            <img src="./Assets/Images/myStory/2.png" alt="">
+                        </div>
+                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5 mx-2">
+                            <img src="./Assets/Images/myStory/3.png" alt="">
+                        </div>
+                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5 mx-2">
+                            <img src="./Assets/Images/myStory/4.png" alt="">
+                        </div>
+                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5 mx-2">
+                            <img src="./Assets/Images/myStory/5.png" alt="">
+                        </div>
+                    </div>
+                    <button id="custom-next-arrow" class="w-[10%] sm:w-[5%]">
+                        <i class="ri-arrow-right-s-line text-[#ffffff80] text-[30px] lg:text-[45px] xl:text-[60px]"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- FOLLOW SOCIAL MEDIA END -->
+
+        <!-- REPROGRAM BOOTCAMP START-->
+        <section id="reprogramBootcamp" class="reprogramBootcamp bg-black text-white">
+            <div class="container mx-auto px-4 py-16 text-center">
+                <h1 class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-2 sm:mb-4">
+                    REPROGRAM BOOTCAMP
+                </h1>
+                <p class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] mb-12">JOIN THE WAITLIST BELOW TO
+                    BE<br class="sm:hidden"> NOTIFIED WHEN WE OPEN</p>
+                <form
+                    class="bg-[#1b1b1b] lg:w-[70%] mx-auto px-4 py-8 lg:py-16 rounded-[8px] flex flex-col gap-y-5 justify-center">
+                    <input type="text" id="firstName" name="firstName" placeholder="FIRST NAME *"
+                        class="px-3 py-3 rounded-full border border-[#2d2d2d] shadow-lg w-full sm:w-[75%] md:w-[50%] mx-auto focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 bg-[#1b1b1b]">
+                    <input type="email" id="email" name="email" placeholder="EMAIL"
+                        class="px-3 py-3 rounded-full border border-[#2d2d2d] shadow-lg w-full sm:w-[75%] md:w-[50%] mx-auto focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 bg-[#1b1b1b]">
+                    <input type="tel" id="cellPhone" name="cellPhone" placeholder="CELL PHONE"
+                        class="px-3 py-3 rounded-full border border-[#2d2d2d] shadow-lg w-full sm:w-[75%] md:w-[50%] mx-auto focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 bg-[#1b1b1b]">
+                    <div class="flex items-center space-x-2 w-full justify-center mx-auto">
+                        <input type="checkbox" id="opt-in" name="opt-in" class="mt-1">
+                        <label for="opt-in"
+                            class="text-[10px] text-start tracking-[1px] text-white brightness-75 mt-1 font-[600]">
+                            BY SUBMITTING A PHONE NUMBER<br class="sm:hidden"> YOU ARE OPTING INTO SMS<br>MESSAGING FOR
+                            REMINDERS FROM<br class="sm:hidden"> THE WINNERS CIRCLE
+                        </label>
+                    </div>
+                    <div class="px-5">
+                        <button
+                            class="mt-1 px-6 py-2 rounded-full bg-white text-black font-bold focus:outline-none focus:ring focus:ring-[#2d2d2d] focus:ring-opacity-50 shadow-lg">JOIN
+                            WAITLIST
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- REPROGRAM BOOTCAMP END -->
+
+        <!-- CHANGE THOUGHTS START -->
+        <section id="changeThoughts" class="changeThoughts py-[30px] relative overflow-hidden text-white">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="container relative z-10">
+                <div class=" lg:w-[70%] mx-auto px-4 flex flex-col gap-y-5 justify-center sm:py-6 md:py-10 lg:py-20">
+                    <h1
+                        class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-2 sm:mb-6 md:mb-12 text-center">
+                        CHANGE YOUR THOUGHTS
+                    </h1>
+                    <p class="text-center text-[12px] msm:text-[16px] sm:text-[22px] md:text-[26px] lg:text-[30px]">
+                        THOUGHT DISCONNECTED FROM EMOTION<br> HAS NO EFFECT,<br> EMOTION NOT GUIDED BY THOUGHT<br> IS
+                        CHAOS.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- CHANGE THOUGHTS END -->
+
+        <!-- FOLLOW SOCIAL MEDIA START -->
+        <section id="faq" class="faq bg-black text-white py-5 md:py-12">
+            <div class="container mx-auto p-4">
+                <h1 class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-8 sm:mb-12 md:mb-16 text-center">FAQ</h1>
+                <div
+                    class="bg-[#1b1b1b] lg:w-[70%] mx-auto px-4 py-8 lg:py-16 rounded-[8px] flex flex-col gap-y-5 justify-center">
+                    <div class="">
+                        <button
+                            class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
+                            onclick="toggleAccordion(event)">
+                            What is Winners Circle?
+                            <svg id="arrow1" class="hidden sm:block transform transition-transform duration-300" stroke="currentColor"
+                                fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <div id="answer1" class="overflow-hidden transition-all duration-1000 linear max-h-0">
+                            <p class="p-4 text-justify">The Winners Circle Is A Community Designed To Foster Success And
+                                Growth. At Its Heart Lies Our Inner Circle, Comprised Of Accomplished Multi-Millionaires
+                                Dedicated To Supporting And Empowering One Another. Surrounding This Core Is Our Outer
+                                Circle, Consisting Of Individuals Seeking To Reprogram Their Minds And Receive
+                                Mentorship To Elevate Their Success. Together, We Embody Our Core Values Of PASSION,
+                                PURPOSE, And PROGRESS, Uniting Us In Our Pursuit Of Excellence And Achievement.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button
+                            class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
+                            onclick="toggleAccordion(event)">
+                            How Long is the Bootcamp?
+                            <svg id="arrow1" class="hidden sm:block transform transition-transform duration-300" stroke="currentColor"
+                                fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <div id="answer1" class="overflow-hidden transition-all duration-1000 linear max-h-0">
+                            <p class="p-4 text-justify">90 Days</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button
+                            class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
+                            onclick="toggleAccordion(event)">
+                            Why is it called Reprogram?
+                            <svg id="arrow1" class="hidden sm:block transform transition-transform duration-300" stroke="currentColor"
+                                fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <div id="answer1" class="overflow-hidden transition-all duration-1000 linear max-h-0">
+                            <p class="p-4 text-justify">The Name "Reprogram" Reflects The Transformative Nature Of Our
+                                Program. Through Daily Habits And Practices, Reprogram Works To Rewire Your Mind,
+                                Instilling A Pattern Of Positive, Success-Driven Thoughts. By Reshaping Your Mindset,
+                                You Pave The Way For Increased Success And Fulfillment In All Areas Of Your Life.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button
+                            class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
+                            onclick="toggleAccordion(event)">
+                            What's the Science Behind the Tools used in the Bootcamp?
+                            <svg id="arrow1" class="hidden sm:block transform transition-transform duration-300" stroke="currentColor"
+                                fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <div id="answer1" class="overflow-hidden transition-all duration-1000 linear max-h-0">
+                            <p class="p-4 text-justify">The Tools Utilized In The Bootcamp Are Grounded In Scientific
+                                Principles Aimed At Optimizing Human Potential. Each Tool Is Carefully Designed To
+                                Leverage Insights From Fields Such As Neuroscience, Psychology, And Behavioral Science
+                                To Facilitate Personal Growth And Development.<br><br>
+
+                                For Example:<br><br>
+
+                                Affirmations And Auto-Suggestion: These Techniques Draw Upon Principles Of
+                                Neuroplasticity And Cognitive-Behavioral Therapy (CBT). By Consistently Reinforcing
+                                Positive Beliefs And Thoughts, Individuals Can Rewire Their Neural Pathways, Leading To
+                                Lasting Changes In Behavior And Mindset.<br><br>
+
+                                Journaling: Journaling Is Supported By Research In Cognitive Psychology And
+                                Self-Reflection. It Provides A Structured Framework For Exploring Thoughts And Emotions,
+                                Enhancing Self-Awareness, And Identifying Patterns That May Be Hindering Personal
+                                Growth.<br><br>
+
+                                Meditation: Techniques Such As Mindfulness Meditation Have Been Shown To Modulate Brain
+                                Activity, Reduce Stress, And Improve Focus And Attention.<br><br>
+
+                                Visualization: Visualization Techniques Capitalize On The Brain's Ability To Simulate
+                                Experiences Mentally. By Vividly Imagining Desired Outcomes, Individuals Activate Neural
+                                Networks Associated With Goal Pursuit, Increasing Motivation And Confidence.<br><br>
+
+                                Goal Setting And Action Planning: These Tools Are Grounded In Principles Of Goal Theory
+                                And Behavioral Economics. By Setting Specific, Measurable, Achievable, Relevant, And
+                                Time-Bound (SMART) Goals And Creating Action Plans, Individuals Increase Their
+                                Likelihood Of Success By Providing Clarity, Direction, And Accountability.<br><br>
+
+                                Overall, The Tools Used In The Bootcamp Are Informed By Scientific Research And Theory,
+                                Empowering Participants To Unlock Their Full Potential And Achieve Meaningful Personal
+                                And Professional Growth.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button
+                            class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
+                            onclick="toggleAccordion(event)">
+                            When does the Bootcamp Launch?
+                            <svg id="arrow1" class="hidden sm:block transform transition-transform duration-300" stroke="currentColor"
+                                fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <div id="answer1" class="overflow-hidden transition-all duration-1000 linear max-h-0">
+                            <p class="p-4 text-justify">2024</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button
+                            class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
+                            onclick="toggleAccordion(event)">
+                            What’s the Money Back Guarantee Policy?
+                            <svg id="arrow1" class="hidden sm:block transform transition-transform duration-300" stroke="currentColor"
+                                fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <div id="answer1" class="overflow-hidden transition-all duration-1000 linear max-h-0">
+                            <p class="p-4 text-justify">We Stand Behind Our Program And Are Committed To Your Success.
+                                If, After Diligently Following The Program For 45 Days, You Haven't Seen The Results You
+                                Expected, You Can Request A Refund. Your Refund Will Be Processed Promptly Within 5
+                                Business Days Of Receiving Your Refund Request. We Believe In The Effectiveness Of Our
+                                Program And Want To Ensure Your Satisfaction And Success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOLLOW SOCIAL MEDIA END -->
+
+    </main>
+
+    <!-- FOOTER START-->
+    <footer id="footer" class="footer">
+        <div class="footerBox flex justify-between w-[80%] mx-auto">
+            <div class="footerBoxLeft py-[30px] sm:py-[60px] md:py-[100px] order-2 sm:order-1">
+                <h2 class="fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] text-start mb-3 sm:mb-3 sm:pt-2">STAY MOTIVATED
+                </h2>
+                <div class="footerIcon flex justify-start gap-2">
+                    <img src="./Assets/Images/Youtube.png" alt="">
+                    <img src="./Assets/Images/instagram2.png" alt="">
+                    <img src="./Assets/Images/tiktok.png" alt="">
+                    <img src="./Assets/Images/facebook.png" alt="">
+                </div>
+            </div>
+            <div class="footerBoxRight flex relative py-6 sm:py-12 md:py-20 overflow-hidden order-1 sm:order-2">
+                <ul class="flex justify-center items-center gap-y-8 flex-wrap w-full">
+                    <li class="w-1/2 lg:text-center"><a href="" class="text-white text-[20px] fontSpriteGraffiti">MY
+                            STORY</a></li>
+                    <li class="w-1/2 lg:text-center"><a href=""
+                            class="text-white text-[20px] fontSpriteGraffiti">REPROGRAM</a></li>
+                    <li class="w-1/2 lg:text-center"><a href=""
+                            class="text-white text-[20px] fontSpriteGraffiti">SHOP</a></li>
+                    <li class="w-1/2 lg:text-center"><a href=""
+                            class="text-white text-[20px] fontSpriteGraffiti">CONTACT</a></li>
+                </ul>
+                <img src="./Assets/Images/Signature.png" alt="" class="absolute">
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- J-SCRIPT  &  J-QUERY START -->
+    <data>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $('.toolSwiper').slick({
+                prevArrow: $('#custom-prev-arrow'),
+                nextArrow: $('#custom-next-arrow'),
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        </script>
+        <script src="assets/javascript/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="Assets/JavaScript/swiper.js"></script>
+        <script src="Assets/JavaScript/chartCDN.js"></script>
+        <script src="Assets/JavaScript/chart.js"></script>
+        <script src="Assets/JavaScript/apexCDN.js"></script>
+        <script src="Assets/JavaScript/apex.js"></script>
+        <script src="Assets/JavaScript/cursor.js"></script>
+        <script src="Assets/JavaScript/bootstrap.min.js"></script>
+        <script src="Assets/JavaScript/bootstrap.bundle.min.js"></script>
+        <script src="Assets/JavaScript/bootstrap.popper.min.js"></script>
+        <script src="Assets/JavaScript/self-made-events.js"></script>
+    </data>
+    <!-- J-SCRIPT  &  J-QUERY END -->
+</body>
+
+</html>
