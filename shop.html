@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Marco Champion</title>
+
+    <!-- FAVICON ICON -->
+    <link rel="icon" href="Assets/Images/Favicon.svg">
+
+    <!-- BASE -->
+    <base href="">
+
+    <!-- META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- FANCY ICONS -->
+    <link rel="stylesheet" href="Assets/CSS/fontawesome.all.min.css">
+    <link rel="stylesheet" href="Assets/Fonts/BSicons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Assets/Fonts/Boxicons/boxicons.css">
+    <link rel="stylesheet" href="Assets/Fonts/Remixicon/remixicon.css">
+    <link rel="stylesheet" href="Assets/Fonts/Flaticons/flaticons.css">
+    <link rel="stylesheet" href="Assets/Fonts/Icofonts/icofont.min.css">
+
+    <!-- MY-CSS -->
+    <link rel="stylesheet" href="Assets/CSS/global.css">
+    <link rel="stylesheet" href="Assets/CSS/shop.css">
+    <link rel="stylesheet" href="Assets/CSS/self-Jquery-style.css">
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    screens: {
+                        xs: '320px',
+                        msm: '425px',
+                        sm: '576px',
+                        lg: '992px',
+                        xl: '1200px',
+                        xxl: '1400px',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <!-- SHOP BANNER START -->
+        <section id="shop_banner" class="shop_banner h-screen relative">
+            <!-- NAVBAR START -->
+            <nav id="nav" class="nav bg-black absolute w-full">
+                <div class="w-[90%] mx-auto">
+                    <div class="flex justify-between items-center p-3">
+                        <img src="./Assets/Images/logo.svg" alt="" width="100px">
+                        <button id="nav-toggle" class="md:hidden text-white focus:outline-none">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </button>
+                        <div id="nav-links" class="hidden md:opacity-[1] absolute w-full left-0 top-20 z-[5] bg-black py-2 md:static md:flex md:items-center md:w-auto border-t border-[#2d2d2d] md:border-none">
+                            <ul class="flex flex-col md:gap-4 md:flex-row md:flex-wrap justify-center">
+                                <li class="p-2 text-center">
+                                    <a href="./index.html" target="_self"
+                                        class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Home
+                                    </a>
+                                </li>
+                                <li class="p-2 text-center">
+                                    <a href="./myStory.html" target="_self"
+                                        class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">My
+                                        Story
+                                    </a>
+                                </li>
+                                <li class="p-2 text-center">
+                                    <a href="./reprogram.html" target="_self"
+                                        class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Reprogram
+                                    </a>
+                                </li>
+                                <li class="p-2 text-center">
+                                    <a href="./shop.html" target="_self"
+                                        class="text-[20px] fontSpriteGraffiti text-[#fff] font-semibold no-underline hover:text-[#fff]">Shop
+                                    </a>
+                                </li>
+                                <li class="p-2 text-center">
+                                    <a href="./contact.html" target="_self"
+                                        class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- NAVBAR END -->
+            <div class="container h-[100%] relative">
+                <h2 class="text-center pt-24 fontBlanka text-white text-[18px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold">SHOP</h2>
+                <div class="absolute w-full bottom-10 sm:bottom-7 lg:bottom-14 flex flex-col md:flex-row gap-y-5 justify-around items-center">
+                    <div class="w-[75%] md:w-[45%] lg:w-[38%] xl:w-[33%]">
+                        <p class="text-[14px] sm:text-[20px] lg:text-[24px] text-[#212529] text-center bg-white p-3 sm:p-4 font-bold lg:font-bold shadow-xl">
+                            MARCO CHAMPION <br><span class="text-[#216023]">“CHOSEN ONE”</span> COLLECTIONS
+                        </p>
+                    </div>
+                    <div class="w-[75%] md:w-[45%] lg:w-[38%] xl:w-[33%]">
+                        <p class="text-[14px] sm:text-[20px] lg:text-[24px] text-[#212529] text-center bg-white p-3 sm:p-4 font-bold lg:font-bold shadow-xl">
+                            SHOP ALL <br><span class="text-[#6ef4fb]">MOTIV</span> COLLECTIONS
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SHOP BANNER END -->
+
+        <!-- CHAMPION'S VENTURES START -->
+        <section id="championVentures" class="championVentures py-[30px] relative overflow-hidden text-white">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="container relative z-10">
+                <div class="px-4 flex flex-col gap-y-5 justify-center sm:py-6 md:py-10 lg:py-20">
+                    <h1
+                        class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-2 sm:mb-6 md:mb-12 text-center">
+                        championVentures
+                    </h1>
+                    <div class="flex justify-center items-center flex-col sm:flex-row gap-y-5">
+                        <div class="w-1/2 md:w-1/3 xl:w-1/4">
+                            <a href="#">
+                                <img src="./Assets/Images/shop/brand_1.svg" class="w-[140px] md:w-auto mx-auto" alt="">
+                            </a>
+                        </div>
+                        <div class="w-1/2 md:w-1/3 xl:w-1/4">
+                            <a href="#">
+                                <img src="./Assets/Images/shop/brand_2.svg" class="w-[140px] md:w-auto mx-auto" alt="">
+                            </a>
+                        </div>
+                        <div class="w-1/2 md:w-1/3 xl:w-1/4">
+                            <a href="#">
+                                <img src="./Assets/Images/shop/brand_3.svg" class="w-[140px] md:w-auto mx-auto" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CHAMPION'S VENTURES END -->
+
+    </main>
+
+    <!-- FOOTER START-->
+    <footer id="footer" class="footer">
+        <div class="footerBox flex justify-between w-[80%] mx-auto">
+            <div class="footerBoxLeft py-[30px] sm:py-[60px] md:py-[100px] order-2 sm:order-1">
+                <h2
+                    class="fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] text-start mb-3 sm:mb-3 sm:pt-2">
+                    STAY MOTIVATED
+                </h2>
+                <div class="footerIcon flex justify-start gap-2">
+                    <img src="./Assets/Images/Youtube.png" alt="">
+                    <img src="./Assets/Images/instagram2.png" alt="">
+                    <img src="./Assets/Images/tiktok.png" alt="">
+                    <img src="./Assets/Images/facebook.png" alt="">
+                </div>
+            </div>
+            <div class="footerBoxRight flex relative py-6 sm:py-12 md:py-20 overflow-hidden order-1 sm:order-2">
+                <ul class="flex justify-center items-center gap-y-8 flex-wrap w-full">
+                    <li class="w-1/2 lg:text-center"><a href="" class="text-white text-[20px] fontSpriteGraffiti">MY
+                            STORY</a></li>
+                    <li class="w-1/2 lg:text-center"><a href=""
+                            class="text-white text-[20px] fontSpriteGraffiti">REPROGRAM</a></li>
+                    <li class="w-1/2 lg:text-center"><a href=""
+                            class="text-white text-[20px] fontSpriteGraffiti">SHOP</a></li>
+                    <li class="w-1/2 lg:text-center"><a href=""
+                            class="text-white text-[20px] fontSpriteGraffiti">CONTACT</a></li>
+                </ul>
+                <img src="./Assets/Images/Signature.png" alt="" class="absolute">
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- J-SCRIPT  &  J-QUERY START -->
+    <data>
+        <script src="Assets/JavaScript/self-made-events.js"></script>
+    </data>
+    <!-- J-SCRIPT  &  J-QUERY END -->
+</body>
+
+</html>

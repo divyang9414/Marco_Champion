@@ -1,0 +1,14 @@
+.shop_banner {
+  background-image: url("../Images/shop/Shop-Hero-PC.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.championVentures {
+  background-image: url("../Images/homebio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}

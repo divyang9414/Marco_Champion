@@ -96,6 +96,20 @@
     left: calc(50% - 100px / 2);
     top: 190px;
   }
+
+  .exclusiveCircle:hover div .circleLayer{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .lockBox{
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+
+  .exclusiveCircle:hover div .lockBox{
+    opacity: 1;
+  }
+  
   .exclusiveCircle span {
     font-size: 12px;
     padding: 0 20px;
