@@ -57,7 +57,7 @@
         <!-- SHOP BANNER START -->
         <section id="shop_banner" class="shop_banner h-screen relative">
             <!-- NAVBAR START -->
-            <nav id="nav" class="nav bg-black absolute w-full">
+            <nav id="nav" class="nav bg-black absolute w-full z-[5]">
                 <div class="w-[90%] mx-auto">
                     <div class="flex justify-between items-center p-3">
                         <img src="./Assets/Images/logo.svg" alt="" width="100px">
@@ -67,7 +67,8 @@
                                     d="M4 6h16M4 12h16m-7 6h7" />
                             </svg>
                         </button>
-                        <div id="nav-links" class="hidden md:opacity-[1] absolute w-full left-0 top-20 z-[5] bg-black py-2 md:static md:flex md:items-center md:w-auto border-t border-[#2d2d2d] md:border-none">
+                        <div id="nav-links"
+                            class="hidden md:opacity-[1] absolute w-full left-0 top-20 z-[5] bg-black py-2 md:static md:flex md:items-center md:w-auto border-t border-[#2d2d2d] md:border-none">
                             <ul class="flex flex-col md:gap-4 md:flex-row md:flex-wrap justify-center">
                                 <li class="p-2 text-center">
                                     <a href="./index.html" target="_self"
@@ -87,7 +88,7 @@
                                 </li>
                                 <li class="p-2 text-center">
                                     <a href="./shop.html" target="_self"
-                                        class="text-[20px] fontSpriteGraffiti text-[#fff] font-semibold no-underline hover:text-[#fff]">Shop
+                                        class="text-[20px] fontSpriteGraffiti text-[#fff] font-semibold no-underline">Shop
                                     </a>
                                 </li>
                                 <li class="p-2 text-center">
@@ -102,15 +103,20 @@
             </nav>
             <!-- NAVBAR END -->
             <div class="container h-[100%] relative">
-                <h2 class="text-center pt-24 fontBlanka text-white text-[18px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold">SHOP</h2>
-                <div class="absolute w-full bottom-10 sm:bottom-7 lg:bottom-14 flex flex-col md:flex-row gap-y-5 justify-around items-center">
+                <h2
+                    class="text-center pt-24 fontBlanka text-white text-[18px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold">
+                    SHOP</h2>
+                <div
+                    class="absolute w-full bottom-10 sm:bottom-7 lg:bottom-14 flex flex-col md:flex-row gap-y-5 justify-around items-center">
                     <div class="w-[75%] md:w-[45%] lg:w-[38%] xl:w-[33%]">
-                        <p class="text-[14px] sm:text-[20px] lg:text-[24px] text-[#212529] text-center bg-white p-3 sm:p-4 font-bold lg:font-bold shadow-xl">
+                        <p
+                            class="text-[14px] sm:text-[20px] lg:text-[24px] text-[#212529] text-center bg-white p-3 sm:p-4 font-bold lg:font-bold shadow-xl">
                             MARCO CHAMPION <br><span class="text-[#216023]">“CHOSEN ONE”</span> COLLECTIONS
                         </p>
                     </div>
                     <div class="w-[75%] md:w-[45%] lg:w-[38%] xl:w-[33%]">
-                        <p class="text-[14px] sm:text-[20px] lg:text-[24px] text-[#212529] text-center bg-white p-3 sm:p-4 font-bold lg:font-bold shadow-xl">
+                        <p
+                            class="text-[14px] sm:text-[20px] lg:text-[24px] text-[#212529] text-center bg-white p-3 sm:p-4 font-bold lg:font-bold shadow-xl">
                             SHOP ALL <br><span class="text-[#6ef4fb]">MOTIV</span> COLLECTIONS
                         </p>
                     </div>
@@ -161,22 +167,34 @@
                     STAY MOTIVATED
                 </h2>
                 <div class="footerIcon flex justify-start gap-2">
-                    <img src="./Assets/Images/Youtube.png" alt="">
-                    <img src="./Assets/Images/instagram2.png" alt="">
-                    <img src="./Assets/Images/tiktok.png" alt="">
-                    <img src="./Assets/Images/facebook.png" alt="">
+                    <a href="https://www.youtube.com">
+                        <img src="./Assets/Images/Youtube.png" alt="YouTube">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img src="./Assets/Images/instagram2.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com">
+                        <img src="./Assets/Images/tiktok.png" alt="TikTok">
+                    </a>
+                    <a href="https://www.facebook.com">
+                        <img src="./Assets/Images/facebook.png" alt="Facebook">
+                    </a>
                 </div>
             </div>
             <div class="footerBoxRight flex relative py-6 sm:py-12 md:py-20 overflow-hidden order-1 sm:order-2">
-                <ul class="flex justify-center items-center gap-y-8 flex-wrap w-full">
-                    <li class="w-1/2 lg:text-center"><a href="" class="text-white text-[20px] fontSpriteGraffiti">MY
-                            STORY</a></li>
-                    <li class="w-1/2 lg:text-center"><a href=""
-                            class="text-white text-[20px] fontSpriteGraffiti">REPROGRAM</a></li>
-                    <li class="w-1/2 lg:text-center"><a href=""
-                            class="text-white text-[20px] fontSpriteGraffiti">SHOP</a></li>
-                    <li class="w-1/2 lg:text-center"><a href=""
-                            class="text-white text-[20px] fontSpriteGraffiti">CONTACT</a></li>
+                <ul class="flex justify-center items-center gap-y-8 flex-wrap w-full relative z-[5]">
+                    <li class="w-1/2 lg:text-center">
+                        <a href="./myStory.html" class="text-white text-[20px] fontSpriteGraffiti">MY STORY</a>
+                    </li>
+                    <li class="w-1/2 lg:text-center">
+                        <a href="./reprogram.html" class="text-white text-[20px] fontSpriteGraffiti">REPROGRAM</a>
+                    </li>
+                    <li class="w-1/2 lg:text-center">
+                        <a href="./shop.html" class="text-white text-[20px] fontSpriteGraffiti">SHOP</a>
+                    </li>
+                    <li class="w-1/2 lg:text-center">
+                        <a href="./contact.html" class="text-white text-[20px] fontSpriteGraffiti">CONTACT</a>
+                    </li>
                 </ul>
                 <img src="./Assets/Images/Signature.png" alt="" class="absolute">
             </div>

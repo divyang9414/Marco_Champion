@@ -63,8 +63,9 @@
 
 	<main>
 		<!-- MAIN-BANNER START -->
-		<section id="main_banner" class="">
+		<section id="main_banner" class="pt-5 sm:pt-0">
 			<div class="main_banner h-screen">
+				<!-- NAVBAR START -->
 				<nav id="nav" class="nav">
 					<div class="w-[90%] mx-auto pt-[60px]">
 						<div class="flex justify-between items-center p-3">
@@ -76,11 +77,11 @@
 								</svg>
 							</button>
 							<div id="nav-links"
-								class="hidden md:opacity-[1] absolute w-full left-0 top-20 z-[5] py-2 md:static md:flex md:items-center md:w-auto border-t border-[#2d2d2d] md:border-none">
+								class="hidden md:opacity-[1] bg-[#001838] md:bg-transparent absolute w-full left-0 top-36 z-[5] py-2 md:static md:flex md:items-center md:w-auto">
 								<ul class="flex flex-col md:gap-4 md:flex-row md:flex-wrap justify-center">
 									<li class="p-2 text-center">
 										<a href="./index.html" target="_self"
-											class="text-[20px] fontSpriteGraffiti text-[#fff] font-semibold no-underline">Home
+											class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Home
 										</a>
 									</li>
 									<li class="p-2 text-center">
@@ -91,7 +92,7 @@
 									</li>
 									<li class="p-2 text-center">
 										<a href="./reprogram.html" target="_self"
-											class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Reprogram
+											class="text-[20px] fontSpriteGraffiti text-[#fff] font-semibold no-underline">Reprogram
 										</a>
 									</li>
 									<li class="p-2 text-center">
@@ -109,6 +110,7 @@
 						</div>
 					</div>
 				</nav>
+				<!-- NAVBAR END -->
 			</div>
 			<div class="text-center">
 				<p class="tracking-[8px] text-[#c19752] font-semibold text-[24px] px-1 py-2">BECOME THE BEST VERSION OF
@@ -280,12 +282,17 @@
 					<div class="cursor-pointer winSubCircle2 absolute duration-300 hover:scale-[1.02] overflow-hidden">
 						<img src="./Assets/Images/mentorship.png" alt="">
 					</div>
-					<div class="cursor-pointer exclusiveCircle bg-[#0c2106] flex justify-center items-center absolute duration-300 hover:scale-[1.05] overflow-hidden">
+					<div
+						class="cursor-pointer exclusiveCircle bg-[#0c2106] flex justify-center items-center absolute duration-300 hover:scale-[1.05] overflow-hidden">
 						<div class="text-center h-[100%] relative">
 							<div class="circleLayer absolute inset-0"></div>
-							<span class="text-white font-semibold flex justify-between items-center md:text-[22px] h-[100%]">EXCLUSIVE INNER CIRCLE</span>
-							<div class=" lockBox absolute z-[1] w-full h-[100%] top-0 left-0 rounded-full flex justify-center items-center">
-								<i class="ri-lock-fill text-white text-[30px] sm:text-[40px] md:text[50px] lg:text-[60px]"></i>
+							<span
+								class="text-white font-semibold flex justify-between items-center md:text-[22px] h-[100%]">EXCLUSIVE
+								INNER CIRCLE</span>
+							<div
+								class=" lockBox absolute z-[1] w-full h-[100%] top-0 left-0 rounded-full flex justify-center items-center">
+								<i
+									class="ri-lock-fill text-white text-[30px] sm:text-[40px] md:text[50px] lg:text-[60px]"></i>
 							</div>
 						</div>
 					</div>
@@ -332,22 +339,34 @@
 					STAY MOTIVATED
 				</h2>
 				<div class="footerIcon flex justify-start gap-2">
-					<img src="./Assets/Images/Youtube.png" alt="">
-					<img src="./Assets/Images/instagram2.png" alt="">
-					<img src="./Assets/Images/tiktok.png" alt="">
-					<img src="./Assets/Images/facebook.png" alt="">
+					<a href="https://www.youtube.com">
+                        <img src="./Assets/Images/Youtube.png" alt="YouTube">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img src="./Assets/Images/instagram2.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com">
+                        <img src="./Assets/Images/tiktok.png" alt="TikTok">
+                    </a>
+                    <a href="https://www.facebook.com">
+                        <img src="./Assets/Images/facebook.png" alt="Facebook">
+                    </a>
 				</div>
 			</div>
 			<div class="footerBoxRight flex relative py-6 sm:py-12 md:py-20 overflow-hidden order-1 sm:order-2">
-				<ul class="flex justify-center items-center gap-y-8 flex-wrap w-full">
-					<li class="w-1/2 lg:text-center"><a href="" class="text-white text-[20px] fontSpriteGraffiti">MY
-							STORY</a></li>
-					<li class="w-1/2 lg:text-center"><a href=""
-							class="text-white text-[20px] fontSpriteGraffiti">REPROGRAM</a></li>
-					<li class="w-1/2 lg:text-center"><a href=""
-							class="text-white text-[20px] fontSpriteGraffiti">SHOP</a></li>
-					<li class="w-1/2 lg:text-center"><a href=""
-							class="text-white text-[20px] fontSpriteGraffiti">CONTACT</a></li>
+				<ul class="flex justify-center items-center gap-y-8 flex-wrap w-full relative z-[5]">
+					<li class="w-1/2 lg:text-center">
+                        <a href="./myStory.html" class="text-white text-[20px] fontSpriteGraffiti">MY STORY</a>
+                    </li>
+                    <li class="w-1/2 lg:text-center">
+                        <a href="./reprogram.html" class="text-white text-[20px] fontSpriteGraffiti">REPROGRAM</a>
+                    </li>
+                    <li class="w-1/2 lg:text-center">
+                        <a href="./shop.html" class="text-white text-[20px] fontSpriteGraffiti">SHOP</a>
+                    </li>
+                    <li class="w-1/2 lg:text-center">
+                        <a href="./contact.html" class="text-white text-[20px] fontSpriteGraffiti">CONTACT</a>
+                    </li>
 				</ul>
 				<img src="./Assets/Images/Signature.png" alt="" class="absolute">
 			</div>
