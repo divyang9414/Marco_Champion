@@ -5,6 +5,10 @@
   background-size: cover;
   background-position: center;
 }
+.advertisement p,
+.advertisement button{
+  font-family: sans-serif !important;
+}
 /* ADVERTISEMENT END */
 
 /* MAIN BANNER START */
@@ -53,12 +57,15 @@
   background-position: center;
 }
 .iconContainer {
-  background-color: white;
+  background-color: #ffffff;
   background-image: url("../Images/stay_connected.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
+
+
+
 /* SOCIAL MEDIA END */
 
 /* Extra Small (XS) screens */
@@ -71,30 +78,31 @@
     left: calc(50% - 220px / 2);
   }
   .winnerCircle {
-    height: 400px;
+    height: 500px;
   }
   .winCircle {
-    width: 320px;
-    top: 60px;
+    width: 100%;
+    scale: 1.4;
+    top: 100px;
   }
   .winSubCircle1 {
     border-radius: 50%;
-    width: 200px;
-    left: calc(50% - 200px / 2);
+    width: 300px;
+    left: calc(50% - 300px / 2);
     top: 140px;
   }
   .winSubCircle2 {
     border-radius: 50%;
-    width: 150px;
-    left: calc(50% - 150px / 2);
-    top: 165px;
+    width: 225px;
+    left: calc(50% - 225px / 2);
+    top: 178px;
   }
   .exclusiveCircle {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    left: calc(50% - 150px / 2);
     border-radius: 50%;
-    left: calc(50% - 100px / 2);
-    top: 190px;
+    top: 215px;
   }
 
   .exclusiveCircle:hover div .circleLayer{
@@ -134,10 +142,11 @@
   .aboutImage {
     width: 270px;
     left: calc(50% - 270px / 2);
+    bottom: -62px;
   }
   .winCircle {
-    width: 375px;
-    top: 40px;
+    scale: 1.3;
+    top:80px;
   }
 }
 
@@ -150,9 +159,12 @@
     width: 300px;
     left: calc(50% - 300px / 2);
   }
+  .winnerCircle {
+    height: 510px;
+  }
   .winCircle {
-    width: 425px;
-    top: 30px;
+    scale: 1.1;
+    top:60px;
   }
 }
 
@@ -166,27 +178,26 @@
     left: calc(50% - 420px / 2);
   }
   .winnerCircle {
-    height: 550px;
+    height: 600px;
   }
   .winCircle {
-    width: 576px;
-    top: 20px;
+    top: 60px;
   }
   .winSubCircle1 {
     width: 350px;
     left: calc(50% - 350px / 2);
-    top: 140px;
+    top: 180px;
   }
   .winSubCircle2 {
     width: 270px;
     left: calc(50% - 270px / 2);
-    top: 180px;
+    top: 220px;
   }
   .exclusiveCircle {
     width: 180px;
     height: 180px;
     left: calc(50% - 180px / 2);
-    top: 225px;
+    top: 265px;
   }
   .iconContainer {
     gap: 32px;
@@ -200,10 +211,11 @@
 /* Extra Large (XL) screens */
 @media (min-width: 640px) {
   .winnerCircle {
-    height: 580px;
+    height: 570px;
   }
   .winCircle {
-    width: 640px;
+    scale: 1;
+    top:20px;
   }
   .winSubCircle1 {
     width: 350px;
@@ -233,41 +245,47 @@
     width: 520px;
     left: calc(50% - 520px / 2);
   }
-  .winnerCircle {
-    height: 700px;
-  }
   .winCircle {
-    width: 768px;
-    left: calc(50% - 768px / 2);
-    top: 20px;
-  }
-  .winSubCircle1 {
-    width: 450px;
-    left: calc(50% - 450px / 2);
-    top: 180px;
-  }
-  .winSubCircle2 {
-    width: 330px;
-    left: calc(50% - 330px / 2);
-    top: 240px;
-  }
-  .exclusiveCircle {
-    width: 200px;
-    height: 200px;
-    left: calc(50% - 200px / 2);
-    top: 305px;
+    scale: 0.8;
+    top:-60px;
   }
   .exclusiveCircle span {
     font-size: 22px;
     padding: 0 60px;
   }
-  .social {
-    padding: 30px 30px;
-  }
 }
 
 /* 3XL screens */
 @media (min-width: 992px) {
+  .winnerCircle {
+    height: 745px;
+  }
+  .winCircle {
+    scale: 1;
+    width: 868px;
+    left: calc(50% - 868px / 2);
+    top:0px;
+  }
+  .winSubCircle1 {
+    width: 500px;
+    left: calc(50% - 500px / 2);
+    top: 180px;
+  }
+  .winSubCircle2 {
+    width: 350px;
+    left: calc(50% - 350px / 2);
+    top: 255px;
+  }
+  .exclusiveCircle {
+    width: 200px;
+    height: 200px;
+    left: calc(50% - 200px / 2);
+    top: 330px;
+  }
+  .iconContainer div {
+    width: 200px;
+    padding: 5px 10px;
+  }
   .iconContainer div span {
     display: inline;
   }
@@ -289,11 +307,23 @@
   .aboutImage {
     width: 625px;
     left: calc(50% - 625px / 2);
+    bottom: 62px;
+    scale: 1.38;
+  }
+  .iconContainer div {
+    width: 200px;
+    padding: 10px 20px;
   }
 }
 
 /* 5XL screens */
 @media (min-width: 1400px) {
+  .aboutImage {
+    width: 625px;
+    left: calc(50% - 625px / 2);
+    bottom: -20px;
+    scale: 1.11;
+  }
 }
 
 /* 6XL screens */

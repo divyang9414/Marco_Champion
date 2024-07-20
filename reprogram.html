@@ -42,9 +42,13 @@
                         xs: '320px',
                         msm: '425px',
                         sm: '576px',
+                        mmd: '640px',
                         lg: '992px',
                         xl: '1200px',
                         xxl: '1400px',
+                    },
+                    spacing: {
+                        '15': '60px',
                     },
                 }
             }
@@ -54,8 +58,8 @@
 
 <body>
     <!-- NAVBAR START -->
-    <nav id="nav" class="nav bg-black">
-        <div class="w-[90%] mx-auto">
+    <nav id="nav" class="nav bg-black sticky top-0 z-[50]">
+        <div class="container">
             <div class="flex justify-between items-center p-3">
                 <img src="./Assets/Images/logo.svg" alt="" width="100px">
                 <button id="nav-toggle" class="md:hidden text-white focus:outline-none">
@@ -101,29 +105,28 @@
 
     <main>
         <!-- REPROGRAM BANNER START -->
-        <section id="reprogram_banner" class="reprogram_banner pb-[30px]">
+        <section id="reprogram_banner" class="reprogram_banner relative pb-[30px]">
             <div class="container">
                 <div class="relative">
-                    <img src="./Assets/Images/reprogram/HomePage2.png" class="w-[70%] mx-auto pb-[40px] sm:pb-[70px] md:pb-[90px] lg:pb-[120px] xl:pb-[140px] relative z-[2]"
+                    <img src="./Assets/Images/reprogram/HomePage2.png" class="w-[70%] mx-auto pb-[40px] sm:pb-[70px] md:pb-[90px] lg:pb-[120px] xl:pb-[140px] relative z-[3]"
                         alt="">
-                    <div class="bg-white w-full absolute bottom-0 z-[1] p-3 sm:p-5 md:p-6 lg:p-8">
+                    <div class="bg-white w-full absolute bottom-0 z-[2] p-3 sm:p-5 md:p-6 lg:p-8">
                         <img src="./Assets/Images/reprogram/Disconnect-to-Reconnect.png" class="w-full" alt="">
                     </div>
                 </div>
             </div>
+            <div class="changeYourThought absolute w-full z-[1] bg-black">
+                <h2 class="changeYourThoughtTitle text-white  font-semibold text-center py-8 sm:py-12 md:py-12 lg:py-18 xl:py-20">"CHANGE YOUR THOUGHTS CHANGE YOUR LIFE"</h2>
+            </div>
         </section>
         <!-- REPROGRAM BANNER END -->
 
-        <!-- CHANGE THOUGHT START -->
-        <section id="changeThought" class="changeThought py-[30px] bg-black">
-            <div class="container">
-                <h2 class="text-white text-[26px] sm:text-[30px] md:text-[34px] lg:text-[38px] xl:text-[40px] font-semibold text-center py-8 sm:py-12 md:py-16 lg:py-18 xl:py-20">"CHANGE YOUR THOUGHTS<br> CHANGE YOUR LIFE"</h2>
-            </div>
-        </section>
-        <!-- CHANGE THOUGHT END -->
+        <!-- EMPTY SECTION START -->
+        <section id="" class="emptySection"></section>
+        <!-- EMPTY SECTION END -->
 
         <!-- FOLLOW SOCIAL MEDIA START -->
-        <section id="bootcampTools" class="bootcampTools py-5 md:py-12 relative  overflow-hidden">
+        <section id="bootcampTools" class="bootcampTools py-5 md:py-15 relative  overflow-hidden">
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             <div class="container relative z-10">
                 <div class="px-5 text-center">
@@ -132,7 +135,7 @@
                         TOOLS USED IN BOOTCAMP
                     </h1>
                 </div>
-                <div class="py-6 px-3 flex items-center">
+                <div class="px-3 flex items-center">
                     <button id="custom-prev-arrow flex justify-between items-center" class="w-[10%] sm:w-[5%]">
                         <i
                             class="ri-arrow-left-s-line text-[#ffffff80] text-[30px] lg:text-[45px] xl:text-[60px] ml-[-4px]"></i>
@@ -163,8 +166,8 @@
         <!-- FOLLOW SOCIAL MEDIA END -->
 
         <!-- REPROGRAM BOOTCAMP START-->
-        <section id="reprogramBootcamp" class="reprogramBootcamp bg-black text-white">
-            <div class="container mx-auto px-4 py-16 text-center">
+        <section id="reprogramBootcamp" class="reprogramBootcamp py-15 bg-black text-white">
+            <div class="container mx-auto px-4 text-center">
                 <h1 class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-2 sm:mb-4">
                     REPROGRAM BOOTCAMP
                 </h1>
@@ -173,11 +176,11 @@
                 <form
                     class="bg-[#1b1b1b] lg:w-[70%] mx-auto px-4 py-8 lg:py-16 rounded-[8px] flex flex-col gap-y-5 justify-center">
                     <input type="text" id="firstName" name="firstName" placeholder="FIRST NAME *"
-                        class="px-3 py-3 rounded-full border border-[#2d2d2d] shadow-lg w-full sm:w-[75%] md:w-[50%] mx-auto focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 bg-[#1b1b1b]">
+                        class="px-3 py-3 rounded-full border border-[#2d2d2d] shadow-lg w-full sm:w-[75%] md:w-[50%] mx-auto focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 bg-[#1b1b1b] text-center">
                     <input type="email" id="email" name="email" placeholder="EMAIL"
-                        class="px-3 py-3 rounded-full border border-[#2d2d2d] shadow-lg w-full sm:w-[75%] md:w-[50%] mx-auto focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 bg-[#1b1b1b]">
+                        class="px-3 py-3 rounded-full border border-[#2d2d2d] shadow-lg w-full sm:w-[75%] md:w-[50%] mx-auto focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 bg-[#1b1b1b] text-center">
                     <input type="tel" id="cellPhone" name="cellPhone" placeholder="CELL PHONE"
-                        class="px-3 py-3 rounded-full border border-[#2d2d2d] shadow-lg w-full sm:w-[75%] md:w-[50%] mx-auto focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 bg-[#1b1b1b]">
+                        class="px-3 py-3 rounded-full border border-[#2d2d2d] shadow-lg w-full sm:w-[75%] md:w-[50%] mx-auto focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 bg-[#1b1b1b] text-center">
                     <div class="flex items-center space-x-2 w-full justify-center mx-auto">
                         <input type="checkbox" id="opt-in" name="opt-in" class="mt-1">
                         <label for="opt-in"
@@ -198,16 +201,16 @@
         <!-- REPROGRAM BOOTCAMP END -->
 
         <!-- CHANGE THOUGHTS START -->
-        <section id="changeThoughts" class="changeThoughts py-[30px] relative overflow-hidden text-white">
+        <section id="changeThoughts" class="changeThoughts py-6 md:py-10 lg:py-15 relative overflow-hidden text-white">
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             <div class="container relative z-10">
-                <div class=" lg:w-[70%] mx-auto px-4 flex flex-col gap-y-5 justify-center sm:py-6 md:py-10 lg:py-20">
+                <div class=" lg:w-[70%] mx-auto px-4 flex flex-col gap-y-5 justify-center">
                     <h1
                         class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-2 sm:mb-6 md:mb-12 text-center">
                         CHANGE YOUR THOUGHTS
                     </h1>
-                    <p class="text-center text-[12px] msm:text-[16px] sm:text-[22px] md:text-[26px] lg:text-[30px]">
-                        THOUGHT DISCONNECTED FROM EMOTION<br> HAS NO EFFECT,<br> EMOTION NOT GUIDED BY THOUGHT<br> IS
+                    <p class="text-center">
+                        THOUGHT DISCONNECTED FROM EMOTION HAS NO EFFECT,<br class="hidden xxl:block"> EMOTION NOT GUIDED BY THOUGHT<br> IS
                         CHAOS.
                     </p>
                 </div>
@@ -216,11 +219,11 @@
         <!-- CHANGE THOUGHTS END -->
 
         <!-- FOLLOW SOCIAL MEDIA START -->
-        <section id="faq" class="faq bg-black text-white pt-5 md:pt-12">
-            <div class="container mx-auto p-4 pb-16 border-b border-[#2d2d2d]">
-                <h1 class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-8 sm:mb-12 md:mb-16 text-center">FAQ</h1>
+        <section id="faq" class="faq bg-black text-white">
+            <div class="container px-4 py-15 border-b border-[#2d2d2d]">
+                <h1 class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-15 text-center">FAQS</h1>
                 <div
-                    class="bg-[#1b1b1b] lg:w-[70%] mx-auto px-4 py-8 lg:py-16 rounded-[8px] flex flex-col gap-y-5 justify-center">
+                    class="bg-[#1b1b1b] lg:w-[70%] mx-auto px-4 py-8 rounded-[8px] flex flex-col gap-y-5 justify-center">
                     <div class="">
                         <button
                             class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
@@ -375,41 +378,43 @@
 
     <!-- FOOTER START-->
     <footer id="footer" class="footer">
-        <div class="footerBox flex justify-between w-[80%] mx-auto pt-8 sm:pt-0">
-            <div class="footerBoxLeft py-[30px] sm:py-[60px] md:py-[100px] order-2 sm:order-1">
-                <h2 class="fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] text-start mb-3 sm:mb-3 sm:pt-2">STAY MOTIVATED
-                </h2>
-                <div class="footerIcon flex justify-start gap-2">
-                    <a href="https://www.youtube.com">
-                        <img src="./Assets/Images/Youtube.png" alt="YouTube">
-                    </a>
-                    <a href="https://www.instagram.com">
-                        <img src="./Assets/Images/instagram2.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.tiktok.com">
-                        <img src="./Assets/Images/tiktok.png" alt="TikTok">
-                    </a>
-                    <a href="https://www.facebook.com">
-                        <img src="./Assets/Images/facebook.png" alt="Facebook">
-                    </a>
+        <div class="container">
+            <div class="footerBox flex justify-between w-[80%] mx-auto pt-8 sm:pt-0">
+                <div class="footerBoxLeft py-[30px] sm:py-[60px] md:py-[100px] order-2 sm:order-1">
+                    <h2 class="fontBlanka fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] text-start mb-3 sm:mb-3 sm:pt-2">STAY MOTIVATED
+                    </h2>
+                    <div class="footerIcon flex justify-start gap-2">
+                        <a href="https://www.youtube.com">
+                            <img src="./Assets/Images/Youtube.png" alt="YouTube">
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <img src="./Assets/Images/instagram2.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com">
+                            <img src="./Assets/Images/tiktok.png" alt="TikTok">
+                        </a>
+                        <a href="https://www.facebook.com">
+                            <img src="./Assets/Images/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="footerBoxRight flex relative py-6 sm:py-12 md:py-20 overflow-hidden order-1 sm:order-2">
-                <ul class="flex justify-center items-center gap-y-8 flex-wrap w-full relative z-[5]">
-                    <li class="w-1/2 lg:text-center">
-                        <a href="./myStory.html" class="text-white text-[20px] fontSpriteGraffiti">MY STORY</a>
-                    </li>
-                    <li class="w-1/2 lg:text-center">
-                        <a href="./reprogram.html" class="text-white text-[20px] fontSpriteGraffiti">REPROGRAM</a>
-                    </li>
-                    <li class="w-1/2 lg:text-center">
-                        <a href="./shop.html" class="text-white text-[20px] fontSpriteGraffiti">SHOP</a>
-                    </li>
-                    <li class="w-1/2 lg:text-center">
-                        <a href="./contact.html" class="text-white text-[20px] fontSpriteGraffiti">CONTACT</a>
-                    </li>
-                </ul>
-                <img src="./Assets/Images/Signature.png" alt="" class="absolute">
+                <div class="footerBoxRight flex relative py-6 sm:py-12 md:py-20 overflow-hidden order-1 sm:order-2">
+                    <ul class="flex justify-center items-center gap-y-8 flex-wrap w-full relative z-[5]">
+                        <li class="w-1/2 lg:text-center">
+                            <a href="./myStory.html" class="text-white text-[20px] fontSpriteGraffiti">MY STORY</a>
+                        </li>
+                        <li class="w-1/2 lg:text-center">
+                            <a href="./reprogram.html" class="text-white text-[20px] fontSpriteGraffiti">REPROGRAM</a>
+                        </li>
+                        <li class="w-1/2 lg:text-center">
+                            <a href="./shop.html" class="text-white text-[20px] fontSpriteGraffiti">SHOP</a>
+                        </li>
+                        <li class="w-1/2 lg:text-center">
+                            <a href="./contact.html" class="text-white text-[20px] fontSpriteGraffiti">CONTACT</a>
+                        </li>
+                    </ul>
+                    <img src="./Assets/Images/Signature.png" alt="" class="absolute">
+                </div>
             </div>
         </div>
     </footer>

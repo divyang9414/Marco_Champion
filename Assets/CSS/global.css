@@ -4,14 +4,77 @@
 }
 
 :root {
+  --font0: "OpenSans", sans-serif;
   --font1: "SpriteGraffiti", sans-serif;
   --font2: "Blanka", sans-serif;
+}
+
+body{
+  font-family: var(--font0);
 }
 
 .container {
   width: 1320px;
   max-width: 1320px;
   margin: auto;
+  height: 100%;
+  border: 1px solid red;
+}
+
+/* section{
+  padding: 30px 0;
+} */
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../Fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../Fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../Fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../Fonts/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+.openSans {
+  font-family: var(--font0);
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+.openSans-semiBold {
+  font-family: var(--font0);
+  font-weight: 600; 
+  letter-spacing: 0.5px;
+}
+
+.openSans-bold {
+  font-family: var(--font0);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.openSans-extraBold {
+  font-family: var(--font0);
+  font-weight: 800;
+  letter-spacing: 0.5px;
 }
 
 @font-face {
@@ -22,7 +85,7 @@
 }
 .fontSpriteGraffiti {
   font-family: var(--font1);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.7px;
   font-weight: 100;
 }
 
@@ -128,6 +191,9 @@
   .container {
     max-width: 960px !important;
   }
+  /* section{
+  padding: 60px 0;
+} */
   .footerBoxLeft {
     width: 50%;
   }
@@ -150,29 +216,6 @@
     text-align: center;
   }
 }
-
-/* 4XL screens */
-/* @media (min-width: 1024px) {
-  .container {
-    max-width: 960px !important;
-  }
-  .footerBoxLeft {
-    width: 50%;
-  }
-  .footerBoxRight {
-    width: 50%;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .footerBoxRight ul {
-    gap: 24px;
-    justify-content: none;
-  }
-  .footerBoxRight ul li {
-    width: auto;
-    text-align: center;
-  }
-} */
 
 /* 4XL screens */
 @media (min-width: 1200px) {

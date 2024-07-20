@@ -46,6 +46,9 @@
                         xl: '1200px',
                         xxl: '1400px',
                     },
+                    spacing: {
+                        '15': '60px',
+                    },
                 }
             }
         }
@@ -53,70 +56,69 @@
 </head>
 
 <body>
+    <!-- NAVBAR START -->
+    <nav id="nav" class="nav bg-black fixed w-full z-[5]">
+        <div class="container">
+            <div class="flex justify-between items-center p-3">
+                <img src="./Assets/Images/logo.svg" alt="" width="100px">
+                <button id="nav-toggle" class="md:hidden text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                <div id="nav-links"
+                    class="hidden md:opacity-[1] absolute w-full left-0 top-20 z-[5] bg-black py-2 md:static md:flex md:items-center md:w-auto border-t border-[#2d2d2d] md:border-none">
+                    <ul class="flex flex-col md:gap-4 md:flex-row md:flex-wrap justify-center">
+                        <li class="p-2 text-center">
+                            <a href="./index.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Home
+                            </a>
+                        </li>
+                        <li class="p-2 text-center">
+                            <a href="./myStory.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">My
+                                Story
+                            </a>
+                        </li>
+                        <li class="p-2 text-center">
+                            <a href="./reprogram.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Reprogram
+                            </a>
+                        </li>
+                        <li class="p-2 text-center">
+                            <a href="./shop.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#fff] font-semibold no-underline">Shop
+                            </a>
+                        </li>
+                        <li class="p-2 text-center">
+                            <a href="./contact.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
     <main>
         <!-- SHOP BANNER START -->
         <section id="shop_banner" class="shop_banner h-screen relative">
-            <!-- NAVBAR START -->
-            <nav id="nav" class="nav bg-black absolute w-full z-[5]">
-                <div class="w-[90%] mx-auto">
-                    <div class="flex justify-between items-center p-3">
-                        <img src="./Assets/Images/logo.svg" alt="" width="100px">
-                        <button id="nav-toggle" class="md:hidden text-white focus:outline-none">
-                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16m-7 6h7" />
-                            </svg>
-                        </button>
-                        <div id="nav-links"
-                            class="hidden md:opacity-[1] absolute w-full left-0 top-20 z-[5] bg-black py-2 md:static md:flex md:items-center md:w-auto border-t border-[#2d2d2d] md:border-none">
-                            <ul class="flex flex-col md:gap-4 md:flex-row md:flex-wrap justify-center">
-                                <li class="p-2 text-center">
-                                    <a href="./index.html" target="_self"
-                                        class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Home
-                                    </a>
-                                </li>
-                                <li class="p-2 text-center">
-                                    <a href="./myStory.html" target="_self"
-                                        class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">My
-                                        Story
-                                    </a>
-                                </li>
-                                <li class="p-2 text-center">
-                                    <a href="./reprogram.html" target="_self"
-                                        class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Reprogram
-                                    </a>
-                                </li>
-                                <li class="p-2 text-center">
-                                    <a href="./shop.html" target="_self"
-                                        class="text-[20px] fontSpriteGraffiti text-[#fff] font-semibold no-underline">Shop
-                                    </a>
-                                </li>
-                                <li class="p-2 text-center">
-                                    <a href="./contact.html" target="_self"
-                                        class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Contact
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- NAVBAR END -->
             <div class="container h-[100%] relative">
                 <h2
                     class="text-center pt-24 fontBlanka text-white text-[18px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold">
                     SHOP</h2>
                 <div
                     class="absolute w-full bottom-10 sm:bottom-7 lg:bottom-14 flex flex-col md:flex-row gap-y-5 justify-around items-center">
-                    <div class="w-[75%] md:w-[45%] lg:w-[38%] xl:w-[33%]">
-                        <p
-                            class="text-[14px] sm:text-[20px] lg:text-[24px] text-[#212529] text-center bg-white p-3 sm:p-4 font-bold lg:font-bold shadow-xl">
+                    <div class="shopCollectionBox w-[75%] md:w-[45%] lg:w-[38%] xl:w-[33%]">
+                        <p class="text-[14px] sm:text-[20px] xxl:text-[24px] text-[#212529] text-center bg-white p-3 sm:p-4 font-bold">
                             MARCO CHAMPION <br><span class="text-[#216023]">“CHOSEN ONE”</span> COLLECTIONS
                         </p>
                     </div>
-                    <div class="w-[75%] md:w-[45%] lg:w-[38%] xl:w-[33%]">
-                        <p
-                            class="text-[14px] sm:text-[20px] lg:text-[24px] text-[#212529] text-center bg-white p-3 sm:p-4 font-bold lg:font-bold shadow-xl">
+                    <div class="shopCollectionBox w-[75%] md:w-[45%] lg:w-[38%] xl:w-[33%]">
+                        <p class="text-[14px] sm:text-[20px] xxl:text-[24px] text-[#212529] text-center bg-white p-3 sm:p-4 font-bold">
                             SHOP ALL <br><span class="text-[#6ef4fb]">MOTIV</span> COLLECTIONS
                         </p>
                     </div>
@@ -126,28 +128,28 @@
         <!-- SHOP BANNER END -->
 
         <!-- CHAMPION'S VENTURES START -->
-        <section id="championVentures" class="championVentures py-[30px] relative overflow-hidden text-white">
+        <section id="championVentures" class="championVentures py-10 lg:py-15 relative overflow-hidden text-white">
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             <div class="container relative z-10">
-                <div class="px-4 flex flex-col gap-y-5 justify-center sm:py-6 md:py-10 lg:py-20">
+                <div class="px-4 flex flex-col justify-center">
                     <h1
-                        class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-2 sm:mb-6 md:mb-12 text-center">
-                        championVentures
+                        class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-10 lg:mb-15 text-center">
+                        champion Ventures
                     </h1>
-                    <div class="flex justify-center items-center flex-col sm:flex-row gap-y-5">
+                    <div class="flex justify-center items-center flex-col sm:flex-row gap-y-2">
                         <div class="w-1/2 md:w-1/3 xl:w-1/4">
                             <a href="#">
-                                <img src="./Assets/Images/shop/brand_1.svg" class="w-[140px] md:w-auto mx-auto" alt="">
+                                <img src="./Assets/Images/shop/brand_1.svg" class="w-[140px] md:w-[240px] xxl:w-[280px] mx-auto" alt="">
                             </a>
                         </div>
                         <div class="w-1/2 md:w-1/3 xl:w-1/4">
                             <a href="#">
-                                <img src="./Assets/Images/shop/brand_2.svg" class="w-[140px] md:w-auto mx-auto" alt="">
+                                <img src="./Assets/Images/shop/brand_2.svg" class="w-[140px] md:w-[240px] xxl:w-[280px] mx-auto" alt="">
                             </a>
                         </div>
                         <div class="w-1/2 md:w-1/3 xl:w-1/4">
                             <a href="#">
-                                <img src="./Assets/Images/shop/brand_3.svg" class="w-[140px] md:w-auto mx-auto" alt="">
+                                <img src="./Assets/Images/shop/brand_3.svg" class="w-[140px] md:w-[240px] xxl:w-[280px] mx-auto" alt="">
                             </a>
                         </div>
                     </div>
@@ -160,43 +162,45 @@
 
     <!-- FOOTER START-->
     <footer id="footer" class="footer">
-        <div class="footerBox flex justify-between w-[80%] mx-auto">
-            <div class="footerBoxLeft py-[30px] sm:py-[60px] md:py-[100px] order-2 sm:order-1">
-                <h2
-                    class="fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] text-start mb-3 sm:mb-3 sm:pt-2">
-                    STAY MOTIVATED
-                </h2>
-                <div class="footerIcon flex justify-start gap-2">
-                    <a href="https://www.youtube.com">
-                        <img src="./Assets/Images/Youtube.png" alt="YouTube">
-                    </a>
-                    <a href="https://www.instagram.com">
-                        <img src="./Assets/Images/instagram2.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.tiktok.com">
-                        <img src="./Assets/Images/tiktok.png" alt="TikTok">
-                    </a>
-                    <a href="https://www.facebook.com">
-                        <img src="./Assets/Images/facebook.png" alt="Facebook">
-                    </a>
+        <div class="container">
+            <div class="footerBox flex justify-between w-[80%] mx-auto">
+                <div class="footerBoxLeft py-[30px] sm:py-[60px] md:py-[100px] order-2 sm:order-1">
+                    <h2
+                        class="fontBlanka fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] text-start mb-3 sm:mb-3 sm:pt-2">
+                        STAY MOTIVATED
+                    </h2>
+                    <div class="footerIcon flex justify-start gap-2">
+                        <a href="https://www.youtube.com">
+                            <img src="./Assets/Images/Youtube.png" alt="YouTube">
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <img src="./Assets/Images/instagram2.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com">
+                            <img src="./Assets/Images/tiktok.png" alt="TikTok">
+                        </a>
+                        <a href="https://www.facebook.com">
+                            <img src="./Assets/Images/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="footerBoxRight flex relative py-6 sm:py-12 md:py-20 overflow-hidden order-1 sm:order-2">
-                <ul class="flex justify-center items-center gap-y-8 flex-wrap w-full relative z-[5]">
-                    <li class="w-1/2 lg:text-center">
-                        <a href="./myStory.html" class="text-white text-[20px] fontSpriteGraffiti">MY STORY</a>
-                    </li>
-                    <li class="w-1/2 lg:text-center">
-                        <a href="./reprogram.html" class="text-white text-[20px] fontSpriteGraffiti">REPROGRAM</a>
-                    </li>
-                    <li class="w-1/2 lg:text-center">
-                        <a href="./shop.html" class="text-white text-[20px] fontSpriteGraffiti">SHOP</a>
-                    </li>
-                    <li class="w-1/2 lg:text-center">
-                        <a href="./contact.html" class="text-white text-[20px] fontSpriteGraffiti">CONTACT</a>
-                    </li>
-                </ul>
-                <img src="./Assets/Images/Signature.png" alt="" class="absolute">
+                <div class="footerBoxRight flex relative py-6 sm:py-12 md:py-20 overflow-hidden order-1 sm:order-2">
+                    <ul class="flex justify-center items-center gap-y-8 flex-wrap w-full relative z-[5]">
+                        <li class="w-1/2 lg:text-center">
+                            <a href="./myStory.html" class="text-white text-[20px] fontSpriteGraffiti">MY STORY</a>
+                        </li>
+                        <li class="w-1/2 lg:text-center">
+                            <a href="./reprogram.html" class="text-white text-[20px] fontSpriteGraffiti">REPROGRAM</a>
+                        </li>
+                        <li class="w-1/2 lg:text-center">
+                            <a href="./shop.html" class="text-white text-[20px] fontSpriteGraffiti">SHOP</a>
+                        </li>
+                        <li class="w-1/2 lg:text-center">
+                            <a href="./contact.html" class="text-white text-[20px] fontSpriteGraffiti">CONTACT</a>
+                        </li>
+                    </ul>
+                    <img src="./Assets/Images/Signature.png" alt="" class="absolute">
+                </div>
             </div>
         </div>
     </footer>

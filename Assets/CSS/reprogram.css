@@ -6,10 +6,146 @@
 }
 
 .bootcampTools,
-.changeThoughts {
+.changeThoughts{
   background-image: url("../Images/homebio.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.changeThoughts p{
+  font-size: ;
+}
+
+/* Extra Small (XS) screens */
+@media (min-width: 320px) {
+  .changeYourThought{
+    bottom: -50px;
+    padding-top: 25px;
+  }
+  .changeYourThoughtTitle{
+    font-size: 12px;
+  }
+  .emptySection{
+    height: 50px;
+  }
+  .changeThoughts p{
+    font-size: 10px;
+  }
+}
+
+/* Small (SM) screens */
+@media (min-width: 375px) {
+  .changeYourThought{
+    bottom: -54px;
+    padding-top: 28px;
+  }
+  .changeYourThoughtTitle{
+    font-size: 14px;
+  }
+  .emptySection{
+    height: 54px;
+  }
+  .changeThoughts p{
+    font-size: 12px;
+  }
+}
+/* Medium (MD) screens */
+@media (min-width: 425px) {
+  .changeYourThought{
+    bottom: -57px;
+    padding-top: 30px;
+  }
+  .changeYourThoughtTitle{
+    font-size: 16px;
+  }
+  .emptySection{
+    height: 57px;
+  }
+  .changeThoughts p{
+    font-size: 14px;
+  }
+}
+
+/* Large (LG) screens */
+@media (min-width: 576px) {
+  .changeYourThought{
+    bottom: -98px;
+    padding-top: 45px;
+  }
+  .changeYourThoughtTitle{
+    font-size: 24px;
+  }
+  .emptySection{
+    height: 98px;
+  }
+  .changeThoughts p{
+    font-size: 20px;
+  }
+}
+
+/* Extra Large (XL) screens */
+@media (min-width: 640px) {
+  .changeYourThought{
+    bottom: -104px;
+    padding-top: 50px;
+  }
+  .changeYourThoughtTitle{
+    font-size: 26px;
+  }
+  .emptySection{
+    height: 104px;
+  }
+  .changeThoughts p{
+    font-size: 22px;
+  }
+}
+
+/* 2XL screens */
+@media (min-width: 768px) {
+  .changeYourThought{
+    bottom: -110px;
+    padding-top: 55px;
+  }
+  .changeYourThoughtTitle{
+    font-size: 30px;
+  }
+  .emptySection{
+    height: 110px;
+  }
+  .changeThoughts p{
+    font-size: 26px;
+  }
+}
+
+/* 3XL screens */
+@media (min-width: 992px) {
+  .changeYourThought{
+    bottom: -122px;
+    padding-top: 70px;
+  }
+  .changeYourThoughtTitle{
+    font-size: 38px;
+  }
+  .emptySection{
+    height: 122px;
+  }
+}
+
+/* 4XL screens */
+@media (min-width: 1200px) {
+  .changeYourThought{
+    bottom: -190px;
+    padding-top: 90px;
+  }
+  .changeYourThoughtTitle{
+    font-size: 40px;
+  }
+  .emptySection{
+    height: 190px;
+  }
+  .changeThoughts p{
+    font-size: 30px;
+  }
 }
