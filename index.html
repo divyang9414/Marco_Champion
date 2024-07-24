@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="Assets/Fonts/Icofonts/icofont.min.css">
 
 	<!-- MY-CSS -->
+	<link rel="stylesheet" href="Assets/CSS/myFont.css">
 	<link rel="stylesheet" href="Assets/CSS/global.css">
 	<link rel="stylesheet" href="Assets/CSS/index.css">
 	<link rel="stylesheet" href="Assets/CSS/self-Jquery-style.css">
@@ -37,6 +38,7 @@
 					},
 					screens: {
 						xs: '320px',
+						msm: '425px',
 						sm: '576px',
 						mmd: '640px',
 						lg: '992px',
@@ -53,65 +55,170 @@
 </head>
 
 <body>
-	<!-- ADVERTISEMENT START -->
-	<section id="advertisement" class="advertisement absolute w-full">
-		<div class="container">
-			<div class="flex flex-col xs:flex-row gap-5 justify-center items-center p-2">
-				<p class="text-white font-bold text-center sm:text-left">JOIN THE BIGGEST MOVEMENT TO ESCAPE THE MATRIX
-				</p>
-				<button class="bg-[#216023] text-white font-semibold py-[6px] px-[12px] rounded hover:bg-green-700">JOIN
-					NOW</button>
-			</div>
-		</div>
-	</section>
-	<!-- ADVERTISEMENT END -->
-
 	<main>
+		<!-- HEADER START -->
+		<header id="home_header" class="home_header bg-black sticky top-0 z-[3] header-hidden">
+			<nav id="nav" class="container nav ">
+				<div class="flex justify-between items-center">
+					<img src="./Assets/Images/logo.svg" alt="" width=""
+						class="w-[50px] md:w-[100px] ml-[-4px] md:ml-[-12px]">
+					<button id="nav-toggle" class="md:hidden text-white focus:outline-none">
+						<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M4 6h16M4 12h16m-7 6h7" />
+						</svg>
+					</button>
+					<div id="nav-links"
+						class="hidden md:opacity-[1] bg-[#001838] md:bg-transparent absolute w-full left-0 top-14 z-[1] py-2 md:static md:flex md:items-center md:w-auto">
+						<ul class="flex flex-col md:gap-4 md:flex-row md:flex-wrap justify-center">
+							<li class="p-2 text-center">
+								<a href="./index.html" target="_self"
+									class="text-[20px] fontSpriteGraffiti text-[#fff] font-semibold no-underline">Home
+								</a>
+							</li>
+							<li class="p-2 text-center">
+								<a href="./myStory.html" target="_self"
+									class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">My
+									Story
+								</a>
+							</li>
+							<li class="p-2 text-center">
+								<a href="./reprogram.html" target="_self"
+									class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Reprogram
+								</a>
+							</li>
+							<li class="p-2 text-center">
+								<a href="./shop.html" target="_self"
+									class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Shop
+								</a>
+							</li>
+							<li class="p-2 text-center">
+								<a href="./contact.html" target="_self"
+									class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- HEADER END -->
+
 		<!-- MAIN-BANNER START -->
-		<section id="main_banner" class="main_banner h-screen pt-[90px] mmd:pt-[60px]">
-			<div class="container">
-				<nav id="nav" class="nav">
-					<div class="flex justify-between items-center">
-						<img src="./Assets/Images/logo.svg" alt="" width="100px" class="ml-[-12px]">
-						<button id="nav-toggle" class="md:hidden text-white focus:outline-none">
-							<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M4 6h16M4 12h16m-7 6h7" />
-							</svg>
-						</button>
-						<div id="nav-links"
-							class="hidden md:opacity-[1] bg-[#001838] md:bg-transparent absolute w-full left-0 top-36 z-[5] py-2 md:static md:flex md:items-center md:w-auto">
-							<ul class="flex flex-col md:gap-4 md:flex-row md:flex-wrap justify-center">
-								<li class="p-2 text-center">
-									<a href="./index.html" target="_self"
-										class="text-[20px] fontSpriteGraffiti text-[#fff] font-semibold no-underline">Home
-									</a>
-								</li>
-								<li class="p-2 text-center">
-									<a href="./myStory.html" target="_self"
-										class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">My
-										Story
-									</a>
-								</li>
-								<li class="p-2 text-center">
-									<a href="./reprogram.html" target="_self"
-										class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Reprogram
-									</a>
-								</li>
-								<li class="p-2 text-center">
-									<a href="./shop.html" target="_self"
-										class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Shop
-									</a>
-								</li>
-								<li class="p-2 text-center">
-									<a href="./contact.html" target="_self"
-										class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Contact
-									</a>
-								</li>
-							</ul>
+		<section id="main_banner" class="main_banner pt-12 msm:pt-[78px] sm:pt-[66px]">
+			<div class="relative">
+				<img src="./Assets/Images/HomePage3.png" alt=""
+					class="xs:mt-[-2px] msm:mt-[-20px] sm:mt-[-14px] mx-auto">
+				<!-- ADVERTISEMENT START -->
+				<div id="advertisement" class="advertisement absolute top-0 w-full">
+					<div class="container">
+						<div class="flex flex-col xs:flex-row gap-5 justify-center items-center p-2">
+							<p
+								class="text-[10px] msm:text-[14px] sm:text-[12px] mmd:text-[16px] text-white font-bold text-center sm:text-left">
+								JOIN THE BIGGEST MOVEMENT TO ESCAPE THE MATRIX
+							</p>
+							<button id="openJoinNowPopup"
+								class="bg-[#216023] inline-block w-[115px] msm: w-[165px] sm:w-[115px] text-[12px] msm:text-[16px] text-white font-semibold py-[6px] px-[4px] msm:px-[12px] rounded hover:bg-white hover:text-[#216023]">JOIN
+								NOW</button>
+							<!-- POPUP BOX START -->
+							<div id="joinNowPopup"
+								class="bg-white w-[300px] sm:w-[368px] max-w-md p-6 shadow-lg relative">
+								<button id="closeJoinNowPopup"
+									class="absolute top-2 right-2 text-gray-400 hover:text-gray-800 z-[4]">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+										stroke="currentColor" class="w-6 h-6">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+											d="M6 18L18 6" />
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+											d="M6 6l12 12" />
+									</svg>
+								</button>
+								<h2 class="text-[22px] sm:text-[28px] text-[#006400] font-[800] text-center mb-4">JOIN
+									THE WORLD'S BIGGEST MOVEMENT TO ESCAPE THE MATRIX</h2>
+								<p class="text-[18px] text-[#212529] text-center mb-4">GET OUR LATEST UPDATES ON HOW TO
+									REPROGRAM YOUR MIND FOR SUCCESS</p>
+
+								<form id="joinNowForm">
+									<input type="text" id="fullName" placeholder="Your Full Name..."
+										class="italic w-full p-2 border border-gray-300 focus:outline-none mb-4">
+									<input type="email" id="emailAddress" placeholder="Your Email Address..."
+										class="italic w-full p-2 border border-gray-300 focus:outline-none mb-4">
+									<button id="upgradeYourMind"
+										class="bg-[#006400] hover:bg-green-900 text-white font-bold py-2 px-4 w-full">Upgrade
+										Your Mind</button>
+								</form>
+
+								<div class="flex items-start mt-4">
+									<input type="checkbox" class="py-2 mr-2">
+									<label class="text-[13px] text-[#212529]">Yes, I want to receive latest episodes and
+										inspiring content emails from Marco Champion</label>
+								</div>
+								<!-- JOIN NOW POOPUP 2 START -->
+								<div id="joinNowSubPopup"
+									class="hidden p-6 flex flex-col justify-between absolute w-full h-[100%] top-0 left-0">
+									<h2 class="text-[22px] sm:text-[28px] text-[#006400] font-[800] text-center">
+										TEXT ME FOR 1 ON 1 CONVERSATION</h2>
+									<button
+										class="w-full border-[3px] border-white bg-black text-white text-bold text-[16px] py-2">JOIN
+										COMMUNITY NUMBER</button>
+								</div>
+								<!-- JOIN NOW POOPUP 2 END -->
+							</div>
+							<div id="joinNowOverlay" class="joinNowOverlay"></div>
+							<!-- POPUP BOX END -->
 						</div>
 					</div>
-				</nav>
+				</div>
+				<!-- ADVERTISEMENT END -->
+
+				<!-- NAVBAR START -->
+				<div id="home_navbar" class="absolute w-full z-[1] top-[53.6px] opacity-1">
+					<nav id="nav" class="container nav">
+						<div class="flex justify-between items-center">
+							<img src="./Assets/Images/logo.svg" alt="" width=""
+								class="w-[50px] md:w-[100px] ml-[-4px] md:ml-[-12px]">
+							<button id="nav-toggle" class="md:hidden text-white focus:outline-none">
+								<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M4 6h16M4 12h16m-7 6h7" />
+								</svg>
+							</button>
+							<div id="nav-links"
+								class="hidden md:opacity-[1] bg-[#001838] md:bg-transparent absolute w-full left-0 top-14 z-[1] py-2 md:static md:flex md:items-center md:w-auto">
+								<ul class="flex flex-col md:gap-4 md:flex-row md:flex-wrap justify-center">
+									<li class="p-2 text-center">
+										<a href="./index.html" target="_self"
+											class="text-[20px] fontSpriteGraffiti text-[#fff] font-semibold no-underline">Home
+										</a>
+									</li>
+									<li class="p-2 text-center">
+										<a href="./myStory.html" target="_self"
+											class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">My
+											Story
+										</a>
+									</li>
+									<li class="p-2 text-center">
+										<a href="./reprogram.html" target="_self"
+											class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Reprogram
+										</a>
+									</li>
+									<li class="p-2 text-center">
+										<a href="./shop.html" target="_self"
+											class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Shop
+										</a>
+									</li>
+									<li class="p-2 text-center">
+										<a href="./contact.html" target="_self"
+											class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Contact
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<!-- NAVBAR END -->
+
 			</div>
 		</section>
 		<!-- MAIN-BANNER END -->
@@ -128,58 +235,55 @@
 		<!-- UPCOMING SHOW START -->
 		<section id="upcomingShow" class="upcomingShow py-15">
 			<div class="container">
-				<h1 class="text-center text-[48px] font-bold mb-7">THE MARCO CHAMPION SHOW</h1>
+				<h1 class="text-center text-[32px] md:text-[48px] font-bold mb-7">THE MARCO CHAMPION SHOW</h1>
 				<div class="container mb-7">
 					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-						<div class="relative max-w-[366px] mx-auto">
+						<div class="cardFilterBox relative max-w-[366px] mx-auto">
+							<div class="cardFilter absolute inset-0 bg-black bg-opacity-50 z-[1]"></div>
 							<div class="relative overflow-hidden shadow-md">
-								<img src="./Assets/Images/podcasthome1.png" alt="Service 2"
-									class="w-full h-auto transform transition-transform duration-300 hover:scale-110">
+								<img src="./Assets/Images/podcasthome1.png" alt="Service 2" class="w-full h-auto">
 								<h2
-									class="absolute w-full text-[16px] sm:text-[26px] md:text-[18px] lg:text-[22px] xl:text-[14px] xxl:text-[16px] font-semibold top-3 sm:top-8 text-white text-center">
+									class="absolute w-full z-[2] text-[16px] sm:text-[26px] md:text-[18px] lg:text-[22px] xl:text-[14px] xxl:text-[16px] font-semibold top-3 sm:top-8 text-white text-center">
 									THE MARCO
 									CHAMPION SHOW</h2>
 								<span
-									class="absolute block w-full text-center bottom-11 text-[#c19752] text-[22px] sm:text-[28px] md:text-[32px] xl:text-[22px] xxl:text-[26px] font-semibold">Coming
+									class="absolute block w-full z-[2] text-center bottom-11 text-[#c19752] text-[22px] sm:text-[28px] md:text-[32px] xl:text-[22px] xxl:text-[26px] font-semibold">Coming
 									Soon</span>
 								<p
-									class="absolute w-full text-white text-center bottom-5 text-[18px] sm:text[22px] md:text-[24px] xl:text-[18px] xxl:text-[20px]">
-									The Elon Musk is
-									coming...</p>
+									class="absolute w-full z-[2] text-white text-center bottom-5 font-bold text-[18px] sm:text[22px] md:text-[24px] lg:text-[20px] xl:text-[18px] xxl:text-[20px]">
+									Running W/ David Goggins</p>
 							</div>
 						</div>
-						<div class="relative max-w-[366px] mx-auto">
+						<div class="cardFilterBox relative max-w-[366px] mx-auto">
+							<div class="cardFilter absolute inset-0 bg-black bg-opacity-50 z-[1]"></div>
 							<div class="relative overflow-hidden shadow-md">
-								<img src="./Assets/Images/podcasthome1.png" alt="Service 2"
-									class="w-full h-auto transform transition-transform duration-300 hover:scale-110">
+								<img src="./Assets/Images/podcasthome1.png" alt="Service 2" class="w-full h-auto">
 								<h2
-									class="absolute w-full text-[16px] sm:text-[26px] md:text-[18px] lg:text-[22px] xl:text-[14px] xxl:text-[16px] font-semibold top-3 sm:top-8 text-white text-center">
+									class="absolute w-full z-[2] text-[16px] sm:text-[26px] md:text-[18px] lg:text-[22px] xl:text-[14px] xxl:text-[16px] font-semibold top-3 sm:top-8 text-white text-center">
 									THE MARCO
 									CHAMPION SHOW</h2>
 								<span
-									class="absolute block w-full text-center bottom-11 text-[#c19752] text-[22px] sm:text-[28px] md:text-[32px] xl:text-[22px] xxl:text-[26px] font-semibold">Coming
+									class="absolute block w-full z-[2] text-center bottom-11 text-[#c19752] text-[22px] sm:text-[28px] md:text-[32px] xl:text-[22px] xxl:text-[26px] font-semibold">Coming
 									Soon</span>
 								<p
-									class="absolute w-full text-white text-center bottom-5 text-[18px] sm:text[22px] md:text-[24px] xl:text-[18px] xxl:text-[20px]">
-									The Elon Musk is
-									coming...</p>
+									class="absolute w-full z-[2] text-white text-center bottom-5 font-bold text-[18px] sm:text[22px] md:text-[24px] lg:text-[20px] xl:text-[18px] xxl:text-[20px]">
+									Elon Musk Smokes With....</p>
 							</div>
 						</div>
-						<div class="relative max-w-[366px] mx-auto">
+						<div class="cardFilterBox relative max-w-[366px] mx-auto">
+							<div class="cardFilter absolute inset-0 bg-black bg-opacity-50 z-[1]"></div>
 							<div class="relative overflow-hidden shadow-md">
-								<img src="./Assets/Images/podcasthome1.png" alt="Service 2"
-									class="w-full h-auto transform transition-transform duration-300 hover:scale-110">
+								<img src="./Assets/Images/podcasthome1.png" alt="Service 2" class="w-full h-auto">
 								<h2
-									class="absolute w-full text-[16px] sm:text-[26px] md:text-[18px] lg:text-[22px] xl:text-[14px] xxl:text-[16px] font-semibold top-3 sm:top-8 text-white text-center">
+									class="absolute w-full z-[2] text-[16px] sm:text-[26px] md:text-[18px] lg:text-[22px] xl:text-[14px] xxl:text-[16px] font-semibold top-3 sm:top-8 text-white text-center">
 									THE MARCO
 									CHAMPION SHOW</h2>
 								<span
-									class="absolute block w-full text-center bottom-11 text-[#c19752] text-[22px] sm:text-[28px] md:text-[32px] xl:text-[22px] xxl:text-[26px] font-semibold">Coming
+									class="absolute block w-full z-[2] text-center bottom-11 text-[#c19752] text-[22px] sm:text-[28px] md:text-[32px] xl:text-[22px] xxl:text-[26px] font-semibold">Coming
 									Soon</span>
 								<p
-									class="absolute w-full text-white text-center bottom-5 text-[18px] sm:text[22px] md:text-[24px] xl:text-[18px] xxl:text-[20px]">
-									The Elon Musk is
-									coming...</p>
+									class="absolute w-full z-[2] text-white text-center bottom-5 font-bold text-[18px] sm:text[22px] md:text-[24px] lg:text-[20px] xl:text-[18px] xxl:text-[20px]">
+									Sparring With Andrew Tate</p>
 							</div>
 						</div>
 					</div>
@@ -187,13 +291,14 @@
 				<p class="text-center mb-4 md:mb-0 text-[28px] font-bold px-8">
 					BE THE <span class="text-[#c19752]">FIRST TO KNOW</span> WHEN A NEW EPISODE RELEASES
 				</p>
-				<p class="text-center mb-8 text-[25px] font-bold px-8">
+				<p class="text-center mb-6 text-[25px] font-bold px-8">
 					WEEKLY BTS FOOTAGE - WEEKLY WISDOM & MOTIVATION
 				</p>
 				<div class="flex flex-col items-center">
-					<input type="email" class="w-[90%] sm:w-[80%] md:w-[630px] p-4 mb-5 border text-center"
+					<input type="email"
+						class="w-[90%] sm:w-[80%] md:w-[630px] p-2 sm:p-3 md:p-4 mb-5 border text-center"
 						placeholder="Your Email">
-					<button class="bg-[#c19752] text-white font-bold py-4 px-20">Submit</button>
+					<button class="bg-[#c19752] text-white font-bold  py-2 sm:py-3 md:py-4 px-20">Submit</button>
 				</div>
 			</div>
 		</section>
@@ -202,9 +307,10 @@
 		<!-- ABOUT MARCO START-->
 		<section id="about" class="about py-15 relative overflow-hidden">
 			<div class="absolute inset-0 bg-black bg-opacity-50"></div>
-			<div class="container flex flex-wrap relative z-10">
+			<div class="container flex flex-wrap relative z-[1]">
 				<div class="w-full xl:w-1/2 px-4">
-					<h1 class="text-2xl text-[#c19752] font-bold mb-4 pb-7">WHO IS MARCO CHAMPION?</h1>
+					<h1 class="text-[32px] xl:text-[38px] xxl:text-[40px] text-[#c19752] font-semibold md:mb-4 pb-7">WHO
+						IS MARCO CHAMPION?</h1>
 					<p class="text-[14px] text-white text-justify tracking-[0.04rem] leading-[1.5rem]">
 						Growing up, I fell in love with skateboarding and all the adversity that came with it. At 15 Yrs
 						old I had a near death experience being ran over by a car and told by the doctors I would never
@@ -233,13 +339,12 @@
 						Marco Champion
 					</p>
 					<button
-						class="bg-transparent border border-[#c19752] text-[#c19752] font-semibold py-2 px-4 hover:bg-[#c19752] hover:text-white transition-all duration-300">
+						class="bg-transparent border border-[#c19752] text-[#c19752] font-semibold py-2 sm:py-3 md:py-4 px-4 hover:bg-[#c19752] hover:text-white transition-all duration-300">
 						Discover Full Story
 					</button>
 				</div>
 				<div class="w-full xl:w-1/2 p-4 text-center aboutImageBox">
-					<img src="./Assets/Images/about.png" alt="Description of Image"
-						class="aboutImage absolute">
+					<img src="./Assets/Images/about.png" alt="Description of Image" class="aboutImage absolute">
 				</div>
 			</div>
 		</section>
@@ -249,16 +354,18 @@
 		<section id="joinComunity" class="joinComunity py-15 px-3 sm:px-0">
 			<div class="container">
 				<h1
-					class="text-center text-3xl sm:text-5xl md:text-6xl text-[#212529] font-semibold sm:font-bold pb-3 sm:pb-0">
+					class="fontBlanka text-center text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] mb-2 text-[#212529] pb-2">
 					MARCO CHAMPION</h1>
-				<p class="text-center text-3xl sm:text-6xl md:text-7xl text-[#212529] font-bold pb-3 sm:pb-0">TEXT
+				<p class="text-center text-[18px] sm:text-5xl md:text-[70px] text-[#212529] font-bold pb-1 md:pb-3">TEXT
 					COMMUNITY</p>
-				<p class="text-center mb-8 text-2xl sm:text-3xl md:text-4xl text-[#008000] font-bold">TEXT ME FOR 1 ON 1
+				<p class="text-center mb-4 md:mb-8 text-[14px] sm:text-2xl md:text-[32px] text-[#008000] font-bold">TEXT
+					ME FOR 1 ON 1
 					CONVERSATIONS</p>
 				<div class="flex flex-col items-center">
-					<input type="email" class="w-[80%] sm:w-[400px] p-4 mb-5 border text-center" placeholder="PHONE #">
+					<input type="email" class="w-[80%] sm:w-[400px] p-2 sm:p-3 md:p-4 mb-5 border text-center"
+						placeholder="PHONE #">
 					<button
-						class="w-[200px] sm:w-[300px] inline-block bg-black text-white font-bold py-2 sm:py-3 border-2 border-white">JOIN
+						class="w-[250px] sm:w-[300px] inline-block bg-black text-white font-bold py-2 sm:py-3 md:py-4 border-2 border-white">JOIN
 						COMMUNITY NUMBER</button>
 				</div>
 			</div>
@@ -269,7 +376,7 @@
 		<section id="winnerCircle" class="winnerCircle relative overflow-hidden">
 			<div class="absolute inset-0 bg-black bg-opacity-50"></div>
 			<img src="./Assets/Images/Winner-Circle.png" alt="" class="winCircle absolute">
-			<div class="container">
+			<div class="container relative">
 				<div class="relative">
 					<div class="cursor-pointer winSubCircle1 absolute duration-300 hover:scale-[1.02] overflow-hidden">
 						<img src="./Assets/Images/reprogram.png" alt="">
@@ -281,8 +388,7 @@
 						class="cursor-pointer exclusiveCircle bg-[#0c2106] flex justify-center items-center absolute duration-300 hover:scale-[1.05] overflow-hidden">
 						<div class="text-center h-[100%] relative">
 							<div class="circleLayer absolute inset-0"></div>
-							<span
-								class="text-white font-semibold flex justify-between items-center md:text-[22px] h-[100%]">EXCLUSIVE
+							<span class="text-white font-semibold flex justify-between items-center h-[100%]">EXCLUSIVE
 								INNER CIRCLE</span>
 							<div
 								class=" lockBox absolute z-[1] w-full h-[100%] top-0 left-0 rounded-full flex justify-center items-center">
@@ -292,6 +398,10 @@
 						</div>
 					</div>
 				</div>
+				<a href="./bunny.html"
+					class="absolute right-0 bottom-[60px] scale-[0.7] duration-[1s] hover:scale-[0.9]">
+					<img src="./Assets/Images/WinnerCircleButton.png" alt="">
+				</a>
 			</div>
 		</section>
 		<!-- WINNER CIRCLE END -->
@@ -300,23 +410,23 @@
 		<section id="social" class="social md:py-15 xl:px-[60px]">
 			<div class="container">
 				<div class="iconContainer flex justify-center">
-					<div class="flex gap-2 bg-[#d3d5d8] lg:gap-5 items-center">
+					<div class="flex gap-2 bg-[#e3e5e8] lg:gap-5 items-center">
 						<img src="./Assets/Images/instagram.svg" alt="">
 						<span class="text-[18px] xl:text-[20px] font-bold">Instagram</span>
 					</div>
-					<div class="flex gap-2 bg-[#d3d5d8] lg:gap-5 items-center">
+					<div class="flex gap-2 bg-[#e3e5e8] lg:gap-5 items-center">
 						<img src="./Assets/Images/youtube.svg" alt="">
 						<span class="text-[18px] xl:text-[20px] font-bold">You Tube</span>
 					</div>
-					<div class="flex gap-2 bg-[#d3d5d8] lg:gap-5 items-center">
+					<div class="flex gap-2 bg-[#e3e5e8] lg:gap-5 items-center">
 						<img src="./Assets/Images/tiktok.svg" alt="">
 						<span class="text-[18px] xl:text-[20px] font-bold">Tiktok</span>
 					</div>
-					<div class="flex gap-2 bg-[#d3d5d8] lg:gap-5 items-center">
+					<div class="flex gap-2 bg-[#e3e5e8] lg:gap-5 items-center">
 						<img src="./Assets/Images/facebook.svg" alt="">
 						<span class="text-[18px] xl:text-[20px] font-bold">Facebook</span>
 					</div>
-					<div class="flex gap-2 bg-[#d3d5d8] lg:gap-5 items-center">
+					<div class="flex gap-2 bg-[#e3e5e8] lg:gap-5 items-center">
 						<img src="./Assets/Images/twitter.svg" alt="">
 						<span class="text-[18px] xl:text-[20px] font-bold">Twitter</span>
 					</div>
@@ -329,10 +439,10 @@
 	<!-- FOOTER START-->
 	<footer id="footer" class="footer">
 		<div class="container">
-			<div class="footerBox flex justify-between w-[80%] mx-auto">
+			<div class="footerBox flex justify-between">
 				<div class="footerBoxLeft py-[30px] sm:py-[60px] md:py-[100px] order-2 sm:order-1">
 					<h2
-						class="fontBlanka fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] text-start mb-3 sm:mb-3 sm:pt-2">
+						class="fontBlanka fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] lg:text-[40px] text-start mb-3 sm:mb-3 sm:pt-2">
 						STAY MOTIVATED
 					</h2>
 					<div class="footerIcon flex justify-start gap-2">
@@ -351,7 +461,7 @@
 					</div>
 				</div>
 				<div class="footerBoxRight flex relative py-6 sm:py-12 md:py-20 overflow-hidden order-1 sm:order-2">
-					<ul class="flex justify-center items-center gap-y-8 flex-wrap w-full relative z-[5]">
+					<ul class="flex justify-center items-center gap-y-8 flex-wrap w-full relative z-[1]">
 						<li class="w-1/2 lg:text-center">
 							<a href="./myStory.html" class="text-white text-[20px] fontSpriteGraffiti">MY STORY</a>
 						</li>

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url("../Fonts/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "OpenSans";
+    src: url("../Fonts/OpenSans-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "OpenSans";
+    src: url("../Fonts/OpenSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "OpenSans";
+    src: url("../Fonts/OpenSans-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .openSans {
+    font-family: var(--font0);
+    font-weight: normal;
+    letter-spacing: 0.5px;
+  }
+  
+  .openSans-semiBold {
+    font-family: var(--font0);
+    font-weight: 600; 
+    letter-spacing: 0.5px;
+  }
+  
+  .openSans-bold {
+    font-family: var(--font0);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  .openSans-extraBold {
+    font-family: var(--font0);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+  
+  @font-face {
+    font-family: "TNR";
+    src: url("../Fonts/times\ new\ roman.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "TNR";
+    src: url("../Fonts/times\ new\ roman\ bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .TNR {
+    font-family: var(--font3);
+    font-weight: normal;
+    letter-spacing: 0.5px;
+  }
+  
+  .TNR-bold {
+    font-family: var(--font3);
+    font-weight: bold;
+    letter-spacing: 0.3px;
+  }
+  
+  @font-face {
+    font-family: "SpriteGraffiti";
+    src: url("../Fonts/SpriteGraffiti-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  .fontSpriteGraffiti {
+    font-family: var(--font1);
+    letter-spacing: 0.7px;
+    font-weight: 100;
+  }
+  
+  @font-face {
+    font-family: "Blanka";
+    src: url("../Fonts/Blanka-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  .fontBlanka {
+    font-family: var(--font2);
+    letter-spacing: 0.5px;
+    font-weight: 100;
+  }

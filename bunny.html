@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Marco Champion</title>
+
+    <!-- FAVICON ICON -->
+    <link rel="icon" href="Assets/Images/Favicon.svg">
+
+    <!-- BASE -->
+    <base href="">
+
+    <!-- META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FANCY ICONS -->
+    <link rel="stylesheet" href="Assets/CSS/fontawesome.all.min.css">
+    <link rel="stylesheet" href="Assets/Fonts/BSicons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Assets/Fonts/Boxicons/boxicons.css">
+    <link rel="stylesheet" href="Assets/Fonts/Remixicon/remixicon.css">
+    <link rel="stylesheet" href="Assets/Fonts/Flaticons/flaticons.css">
+    <link rel="stylesheet" href="Assets/Fonts/Icofonts/icofont.min.css">
+
+    <!-- MY-CSS -->
+	<link rel="stylesheet" href="Assets/CSS/myFont.css">
+    <link rel="stylesheet" href="Assets/CSS/global.css">
+    <link rel="stylesheet" href="Assets/CSS/bunny.css">
+    <link rel="stylesheet" href="Assets/CSS/self-Jquery-style.css">
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    screens: {
+                        xs: '320px',
+                        sm: '576px',
+                        lg: '992px',
+                        xl: '1200px',
+                        xxl: '1400px',
+                    },
+                    spacing: {
+                        '15': '60px',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <nav id="nav" class="nav bg-black sticky top-0 z-[50]">
+        <div class="container">
+            <div class="flex justify-between items-center py-3">
+                <img src="./Assets/Images/logo.svg" alt="" width=""
+                    class="w-[50px] md:w-[100px] ml-[-4px] md:ml-[-12px]">
+                <button id="nav-toggle" class="md:hidden text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                <div id="nav-links"
+                    class="hidden md:opacity-[1] absolute w-full left-0 top-20 z-[5] bg-black py-2 md:static md:flex md:items-center md:w-auto border-t border-[#2d2d2d] md:border-none">
+                    <ul class="flex flex-col md:gap-4 md:flex-row md:flex-wrap justify-center">
+                        <li class="p-2 text-center">
+                            <a href="./index.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Home
+                            </a>
+                        </li>
+                        <li class="p-2 text-center">
+                            <a href="./myStory.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">My
+                                Story
+                            </a>
+                        </li>
+                        <li class="p-2 text-center">
+                            <a href="./reprogram.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Reprogram
+                            </a>
+                        </li>
+                        <li class="p-2 text-center">
+                            <a href="./shop.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Shop
+                            </a>
+                        </li>
+                        <li class="p-2 text-center">
+                            <a href="./contact.html" target="_self"
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <main>
+        <!-- BUNNY BANNER START -->
+        <section id="bunnyBanner" class="bunnyBanner py-[90px] relative">
+            <div class="absolute inset-0 bg-black bg-opacity-[0.4]"></div>
+            <div class="container relative z-[1]">
+                <a href="#" id="openPopup" class="block w-[80%] mx-auto">
+                    <img src="./Assets/Images//bunny/Matrix-Thumbnail.gif"
+                        class="h-[320px] sm:h-[400px] lg:h-[500px] xl:h-[680px]" alt="">
+                </a>
+                <!-- POPUP BOX START -->
+                <div id="popup" class="bg-white w-[80%] md:w-full max-w-md py-3 md:py-10 px-2 md:px-6 shadow-lg">
+                    <button id="closePopup" class="absolute top-2 right-2 text-gray-400 hover:text-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <h2 class="TNR-bold text-[20px] font-bold mb-4 pr-7 sm:pr-0">input code to access rabbit whole</h2>
+                    <input type="text" placeholder="Input Code"
+                        class="italic w-full p-2 border border-gray-300 focus:outline-none tracking-[1px]">
+                    <button id="accessButton"
+                        class="bg-[#006400] hover:bg-green-900 text-white font-bold py-2 px-4 w-full mt-4">Access</button>
+                </div>
+                <div id="overlay" class="overlay"></div>
+                <!-- POPUP BOX END -->
+            </div>
+        </section>
+        <!-- BUNNY BANNER END -->
+    </main>
+
+    <!-- FOOTER START-->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footerBox flex justify-between">
+                <div class="footerBoxLeft py-[30px] sm:py-[60px] md:py-[100px] order-2 sm:order-1">
+                    <h2
+                        class="fontBlanka fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] lg:text-[40px] text-start mb-3 sm:mb-3 sm:pt-2">
+                        STAY MOTIVATED
+                    </h2>
+                    <div class="footerIcon flex justify-start gap-2">
+                        <a href="https://www.youtube.com">
+                            <img src="./Assets/Images/Youtube.png" alt="YouTube">
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <img src="./Assets/Images/instagram2.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com">
+                            <img src="./Assets/Images/tiktok.png" alt="TikTok">
+                        </a>
+                        <a href="https://www.facebook.com">
+                            <img src="./Assets/Images/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+                <div class="footerBoxRight flex relative py-6 sm:py-12 md:py-20 overflow-hidden order-1 sm:order-2">
+                    <ul class="flex justify-center items-center gap-y-8 flex-wrap w-full relative z-[5]">
+                        <li class="w-1/2 lg:text-center">
+                            <a href="./reprogram.html"
+                                class="text-white text-[28px] sm:text-[28px] md:text-[36px] lg:text-[40px] fontBlanka">REPROGRAM</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- J-SCRIPT  &  J-QUERY START -->
+    <data>
+        <script>
+            document.getElementById('openPopup').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('popup').style.display = 'block';
+                document.getElementById('overlay').style.display = 'block';
+            });
+
+            document.getElementById('closePopup').addEventListener('click', function () {
+                document.getElementById('popup').style.display = 'none';
+                document.getElementById('overlay').style.display = 'none';
+            });
+
+            document.getElementById('accessButton').addEventListener('click', function () {
+                const inputCode = document.querySelector('input[type="text"]').value;
+                if (inputCode === '123') {
+                    document.getElementById('popup').style.display = 'none';
+                    document.getElementById('overlay').style.display = 'none';
+                } else {
+                    alert('Incorrect code. Please try again.');
+                }
+                document.querySelector('input[type="text"]').value = '';
+            });
+        </script>
+        <script src="Assets/JavaScript/self-made-events.js"></script>
+    </data>
+    <!-- J-SCRIPT  &  J-QUERY END -->
+</body>
+
+</html>

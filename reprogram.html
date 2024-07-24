@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="Assets/Fonts/Icofonts/icofont.min.css">
 
     <!-- MY-CSS -->
+	<link rel="stylesheet" href="Assets/CSS/myFont.css">
     <link rel="stylesheet" href="Assets/CSS/global.css">
     <link rel="stylesheet" href="Assets/CSS/reprogram.css">
     <link rel="stylesheet" href="Assets/CSS/self-Jquery-style.css">
@@ -60,8 +61,8 @@
     <!-- NAVBAR START -->
     <nav id="nav" class="nav bg-black sticky top-0 z-[50]">
         <div class="container">
-            <div class="flex justify-between items-center p-3">
-                <img src="./Assets/Images/logo.svg" alt="" width="100px">
+            <div class="flex justify-between items-center py-3">
+                <img src="./Assets/Images/logo.svg" alt="" width="" class="w-[50px] md:w-[100px] ml-[-4px] md:ml-[-12px]">
                 <button id="nav-toggle" class="md:hidden text-white focus:outline-none">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -135,31 +136,33 @@
                         TOOLS USED IN BOOTCAMP
                     </h1>
                 </div>
-                <div class="px-3 flex items-center">
-                    <button id="custom-prev-arrow flex justify-between items-center" class="w-[10%] sm:w-[5%]">
-                        <i
-                            class="ri-arrow-left-s-line text-[#ffffff80] text-[30px] lg:text-[45px] xl:text-[60px] ml-[-4px]"></i>
-                    </button>
+                <div class="flex items-center">
+                    <!-- <button id="custom-prev-arrow flex justify-between items-center" class="w-[10%] sm:w-[5%]">
+                        <i class="ri-arrow-left-s-line text-[#ffffff80] text-[30px] lg:text-[45px] xl:text-[60px] ml-[-4px]"></i>
+                    </button> -->
                     <div class="toolSwiper w-[80%] sm:w-[90%] flex flex-wrap gap-y-12 px-2 sm:px-[0] gap-x-5 flex-grow">
-                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5 mx-2">
-                            <img src="./Assets/Images/myStory/1.png" alt="">
+                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5">
+                            <img src="./Assets/Images/reprogram/bootcamp_1.svg" alt="" class="mx-auto">
                         </div>
-                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5 mx-2">
-                            <img src="./Assets/Images/myStory/2.png" alt="">
+                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5">
+                            <img src="./Assets/Images/reprogram/bootcamp_2.svg" alt="" class="mx-auto">
                         </div>
-                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5 mx-2">
-                            <img src="./Assets/Images/myStory/3.png" alt="">
+                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5">
+                            <img src="./Assets/Images/reprogram/bootcamp_3.svg" alt="" class="mx-auto">
                         </div>
-                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5 mx-2">
-                            <img src="./Assets/Images/myStory/4.png" alt="">
+                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5">
+                            <img src="./Assets/Images/reprogram/bootcamp_4.svg" alt="" class="mx-auto">
                         </div>
-                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5 mx-2">
-                            <img src="./Assets/Images/myStory/5.png" alt="">
+                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5">
+                            <img src="./Assets/Images/reprogram/bootcamp_5.svg" alt="" class="mx-auto">
+                        </div>
+                        <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/5">
+                            <img src="./Assets/Images/reprogram/bootcamp_6.svg" alt="" class="mx-auto">
                         </div>
                     </div>
-                    <button id="custom-next-arrow" class="w-[10%] sm:w-[5%]">
+                    <!-- <button id="custom-next-arrow" class="w-[10%] sm:w-[5%]">
                         <i class="ri-arrow-right-s-line text-[#ffffff80] text-[30px] lg:text-[45px] xl:text-[60px]"></i>
-                    </button>
+                    </button> -->
                 </div>
             </div>
         </section>
@@ -171,10 +174,10 @@
                 <h1 class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-2 sm:mb-4">
                     REPROGRAM BOOTCAMP
                 </h1>
-                <p class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] mb-12">JOIN THE WAITLIST BELOW TO
+                <p class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] mb-6">JOIN THE WAITLIST BELOW TO
                     BE<br class="sm:hidden"> NOTIFIED WHEN WE OPEN</p>
                 <form
-                    class="bg-[#1b1b1b] lg:w-[70%] mx-auto px-4 py-8 lg:py-16 rounded-[8px] flex flex-col gap-y-5 justify-center">
+                    class="bg-[#1b1b1b] lg:w-[70%] mx-auto px-4 py-8 rounded-[8px] flex flex-col gap-y-5 justify-center">
                     <input type="text" id="firstName" name="firstName" placeholder="FIRST NAME *"
                         class="px-3 py-3 rounded-full border border-[#2d2d2d] shadow-lg w-full sm:w-[75%] md:w-[50%] mx-auto focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 bg-[#1b1b1b] text-center">
                     <input type="email" id="email" name="email" placeholder="EMAIL"
@@ -191,8 +194,7 @@
                     </div>
                     <div class="px-5">
                         <button
-                            class="mt-1 px-6 py-2 rounded-full bg-white text-black font-bold focus:outline-none focus:ring focus:ring-[#2d2d2d] focus:ring-opacity-50 shadow-lg">JOIN
-                            WAITLIST
+                            class="mt-1 px-6 sm:px-14 md:px-20 py-2 sm:py-3 md:py-4 rounded-full bg-white text-[20px] text-black font-bold focus:outline-none focus:ring focus:ring-[#2d2d2d] focus:ring-opacity-50 shadow-lg">JOIN WAITLIST
                         </button>
                     </div>
                 </form>
@@ -220,155 +222,90 @@
 
         <!-- FOLLOW SOCIAL MEDIA START -->
         <section id="faq" class="faq bg-black text-white">
-            <div class="container px-4 py-15 border-b border-[#2d2d2d]">
-                <h1 class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-15 text-center">FAQS</h1>
-                <div
-                    class="bg-[#1b1b1b] lg:w-[70%] mx-auto px-4 py-8 rounded-[8px] flex flex-col gap-y-5 justify-center">
-                    <div class="">
-                        <button
-                            class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
-                            onclick="toggleAccordion(event)">
+            <div class="container px-4 py-15">
+                <h1 class="fontBlanka text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold mb-8 text-center">FAQS</h1>
+                <div class="bg-[#1b1b1b] lg:w-[70%] mx-auto px-4 py-8 rounded-[8px] flex flex-col gap-y-5 justify-center">
+                    <div class="accordionItem close">
+                        <button class="accordionItemHeading flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]">
                             What is Winners Circle?
-                            <svg id="arrow1" class="hidden sm:block transform transition-transform duration-300" stroke="currentColor"
-                                fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
-                                    clip-rule="evenodd"></path>
+                            <svg class="hidden sm:block transform transition-transform duration-300" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <div id="answer1" class="overflow-hidden transition-all duration-1000 linear max-h-0">
-                            <p class="p-4 text-justify">The Winners Circle Is A Community Designed To Foster Success And
-                                Growth. At Its Heart Lies Our Inner Circle, Comprised Of Accomplished Multi-Millionaires
-                                Dedicated To Supporting And Empowering One Another. Surrounding This Core Is Our Outer
-                                Circle, Consisting Of Individuals Seeking To Reprogram Their Minds And Receive
-                                Mentorship To Elevate Their Success. Together, We Embody Our Core Values Of PASSION,
-                                PURPOSE, And PROGRESS, Uniting Us In Our Pursuit Of Excellence And Achievement.</p>
+                        <div class="answer overflow-hidden transition-all duration-1000 linear max-h-0">
+                            <p class="text-[#808080] p-4 text-justify">The Winners Circle Is A Community Designed To Foster Success And Growth. At Its Heart Lies Our Inner Circle, Comprised Of Accomplished Multi-Millionaires Dedicated To Supporting And Empowering One Another. Surrounding This Core Is Our Outer Circle, Consisting Of Individuals Seeking To Reprogram Their Minds And Receive Mentorship To Elevate Their Success. Together, We Embody Our Core Values Of PASSION, PURPOSE, And PROGRESS, Uniting Us In Our Pursuit Of Excellence And Achievement.</p>
                         </div>
                     </div>
-                    <div class="">
-                        <button
-                            class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
-                            onclick="toggleAccordion(event)">
+                    <div class="accordionItem close">
+                        <button class="accordionItemHeading flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]">
                             How Long is the Bootcamp?
-                            <svg id="arrow1" class="hidden sm:block transform transition-transform duration-300" stroke="currentColor"
-                                fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
-                                    clip-rule="evenodd"></path>
+                            <svg class="hidden sm:block transform transition-transform duration-300" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <div id="answer1" class="overflow-hidden transition-all duration-1000 linear max-h-0">
-                            <p class="p-4 text-justify">90 Days</p>
+                        <div class="answer overflow-hidden transition-all duration-1000 linear max-h-0">
+                            <p class="text-[#808080] p-4 text-justify">90 Days</p>
                         </div>
                     </div>
-                    <div class="">
-                        <button
-                            class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
-                            onclick="toggleAccordion(event)">
+                    <div class="accordionItem close">
+                        <button class="accordionItemHeading flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]">
                             Why is it called Reprogram?
-                            <svg id="arrow1" class="hidden sm:block transform transition-transform duration-300" stroke="currentColor"
-                                fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
-                                    clip-rule="evenodd"></path>
+                            <svg class="hidden sm:block transform transition-transform duration-300" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <div id="answer1" class="overflow-hidden transition-all duration-1000 linear max-h-0">
-                            <p class="p-4 text-justify">The Name "Reprogram" Reflects The Transformative Nature Of Our
-                                Program. Through Daily Habits And Practices, Reprogram Works To Rewire Your Mind,
-                                Instilling A Pattern Of Positive, Success-Driven Thoughts. By Reshaping Your Mindset,
-                                You Pave The Way For Increased Success And Fulfillment In All Areas Of Your Life.</p>
+                        <div class="answer overflow-hidden transition-all duration-1000 linear max-h-0">
+                            <p class="text-[#808080] p-4 text-justify">The Name "Reprogram" Reflects The Transformative Nature Of Our Program. Through Daily Habits And Practices, Reprogram Works To Rewire Your Mind, Instilling A Pattern Of Positive, Success-Driven Thoughts. By Reshaping Your Mindset, You Pave The Way For Increased Success And Fulfillment In All Areas Of Your Life.</p>
                         </div>
                     </div>
-                    <div class="">
-                        <button
-                            class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
-                            onclick="toggleAccordion(event)">
+                    <div class="accordionItem close">
+                        <button class="accordionItemHeading flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]">
                             What's the Science Behind the Tools used in the Bootcamp?
-                            <svg id="arrow1" class="hidden sm:block transform transition-transform duration-300" stroke="currentColor"
-                                fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
-                                    clip-rule="evenodd"></path>
+                            <svg class="hidden sm:block transform transition-transform duration-300" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <div id="answer1" class="overflow-hidden transition-all duration-1000 linear max-h-0">
-                            <p class="p-4 text-justify">The Tools Utilized In The Bootcamp Are Grounded In Scientific
-                                Principles Aimed At Optimizing Human Potential. Each Tool Is Carefully Designed To
-                                Leverage Insights From Fields Such As Neuroscience, Psychology, And Behavioral Science
-                                To Facilitate Personal Growth And Development.<br><br>
-
-                                For Example:<br><br>
-
-                                Affirmations And Auto-Suggestion: These Techniques Draw Upon Principles Of
-                                Neuroplasticity And Cognitive-Behavioral Therapy (CBT). By Consistently Reinforcing
-                                Positive Beliefs And Thoughts, Individuals Can Rewire Their Neural Pathways, Leading To
-                                Lasting Changes In Behavior And Mindset.<br><br>
-
-                                Journaling: Journaling Is Supported By Research In Cognitive Psychology And
-                                Self-Reflection. It Provides A Structured Framework For Exploring Thoughts And Emotions,
-                                Enhancing Self-Awareness, And Identifying Patterns That May Be Hindering Personal
-                                Growth.<br><br>
-
-                                Meditation: Techniques Such As Mindfulness Meditation Have Been Shown To Modulate Brain
-                                Activity, Reduce Stress, And Improve Focus And Attention.<br><br>
-
-                                Visualization: Visualization Techniques Capitalize On The Brain's Ability To Simulate
-                                Experiences Mentally. By Vividly Imagining Desired Outcomes, Individuals Activate Neural
-                                Networks Associated With Goal Pursuit, Increasing Motivation And Confidence.<br><br>
-
-                                Goal Setting And Action Planning: These Tools Are Grounded In Principles Of Goal Theory
-                                And Behavioral Economics. By Setting Specific, Measurable, Achievable, Relevant, And
-                                Time-Bound (SMART) Goals And Creating Action Plans, Individuals Increase Their
-                                Likelihood Of Success By Providing Clarity, Direction, And Accountability.<br><br>
-
-                                Overall, The Tools Used In The Bootcamp Are Informed By Scientific Research And Theory,
-                                Empowering Participants To Unlock Their Full Potential And Achieve Meaningful Personal
-                                And Professional Growth.</p>
+                        <div class="answer overflow-hidden transition-all duration-1000 linear max-h-0">
+                            <p class="text-[#808080] p-4 text-justify">The Tools Utilized In The Bootcamp Are Grounded In Scientific Principles Aimed At Optimizing Human Potential. Each Tool Is Carefully Designed To Leverage Insights From Fields Such As Neuroscience, Psychology, And Behavioral Science To Facilitate Personal Growth And Development.<br><br>
+            
+                            For Example:<br><br>
+            
+                            Affirmations And Auto-Suggestion: These Techniques Draw Upon Principles Of Neuroplasticity And Cognitive-Behavioral Therapy (CBT). By Consistently Reinforcing Positive Beliefs And Thoughts, Individuals Can Rewire Their Neural Pathways, Leading To Lasting Changes In Behavior And Mindset.<br><br>
+            
+                            Journaling: Journaling Is Supported By Research In Cognitive Psychology And Self-Reflection. It Provides A Structured Framework For Exploring Thoughts And Emotions, Enhancing Self-Awareness, And Identifying Patterns That May Be Hindering Personal Growth.<br><br>
+            
+                            Meditation: Techniques Such As Mindfulness Meditation Have Been Shown To Modulate Brain Activity, Reduce Stress, And Improve Focus And Attention.<br><br>
+            
+                            Visualization: Visualization Techniques Capitalize On The Brain's Ability To Simulate Experiences Mentally. By Vividly Imagining Desired Outcomes, Individuals Activate Neural Networks Associated With Goal Pursuit, Increasing Motivation And Confidence.<br><br>
+            
+                            Goal Setting And Action Planning: These Tools Are Grounded In Principles Of Goal Theory And Behavioral Economics. By Setting Specific, Measurable, Achievable, Relevant, And Time-Bound (SMART) Goals And Creating Action Plans, Individuals Increase Their Likelihood Of Success By Providing Clarity, Direction, And Accountability.<br><br>
+            
+                            Overall, The Tools Used In The Bootcamp Are Informed By Scientific Research And Theory, Empowering Participants To Unlock Their Full Potential And Achieve Meaningful Personal And Professional Growth.</p>
                         </div>
                     </div>
-                    <div class="">
-                        <button
-                            class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
-                            onclick="toggleAccordion(event)">
+                    <div class="accordionItem close">
+                        <button class="accordionItemHeading flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]">
                             When does the Bootcamp Launch?
-                            <svg id="arrow1" class="hidden sm:block transform transition-transform duration-300" stroke="currentColor"
-                                fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
-                                    clip-rule="evenodd"></path>
+                            <svg class="hidden sm:block transform transition-transform duration-300" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <div id="answer1" class="overflow-hidden transition-all duration-1000 linear max-h-0">
-                            <p class="p-4 text-justify">2024</p>
+                        <div class="answer overflow-hidden transition-all duration-1000 linear max-h-0">
+                            <p class="text-[#808080] p-4 text-justify">2024</p>
                         </div>
                     </div>
-                    <div class="">
-                        <button
-                            class="flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]"
-                            onclick="toggleAccordion(event)">
+                    <div class="accordionItem close">
+                        <button class="accordionItemHeading flex items-center justify-between w-full p-3 sm:p-4 text-left text-[14px] sm:text-lg font-semibold rounded-[16px] border border-[#2d2d2d] shadow-lg bg-[#1b1b1b]">
                             What’s the Money Back Guarantee Policy?
-                            <svg id="arrow1" class="hidden sm:block transform transition-transform duration-300" stroke="currentColor"
-                                fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
-                                    clip-rule="evenodd"></path>
+                            <svg class="hidden sm:block transform transition-transform duration-300" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <div id="answer1" class="overflow-hidden transition-all duration-1000 linear max-h-0">
-                            <p class="p-4 text-justify">We Stand Behind Our Program And Are Committed To Your Success.
-                                If, After Diligently Following The Program For 45 Days, You Haven't Seen The Results You
-                                Expected, You Can Request A Refund. Your Refund Will Be Processed Promptly Within 5
-                                Business Days Of Receiving Your Refund Request. We Believe In The Effectiveness Of Our
-                                Program And Want To Ensure Your Satisfaction And Success.</p>
+                        <div class="answer overflow-hidden transition-all duration-1000 linear max-h-0">
+                            <p class="text-[#808080] p-4 text-justify">We Stand Behind Our Program And Are Committed To Your Success. If, After Diligently Following The Program For 45 Days, You Haven't Seen The Results You Expected, You Can Request A Refund. Your Refund Will Be Processed Promptly Within 5 Business Days Of Receiving Your Refund Request. We Believe In The Effectiveness Of Our Program And Want To Ensure Your Satisfaction And Success.</p>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -379,9 +316,9 @@
     <!-- FOOTER START-->
     <footer id="footer" class="footer">
         <div class="container">
-            <div class="footerBox flex justify-between w-[80%] mx-auto pt-8 sm:pt-0">
+            <div class="footerBox flex justify-between pt-8 sm:pt-0">
                 <div class="footerBoxLeft py-[30px] sm:py-[60px] md:py-[100px] order-2 sm:order-1">
-                    <h2 class="fontBlanka fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] text-start mb-3 sm:mb-3 sm:pt-2">STAY MOTIVATED
+                    <h2 class="fontBlanka fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] lg:text-[40px] text-start mb-3 sm:mb-3 sm:pt-2">STAY MOTIVATED
                     </h2>
                     <div class="footerIcon flex justify-start gap-2">
                         <a href="https://www.youtube.com">
@@ -430,7 +367,7 @@
                 prevArrow: $('#custom-prev-arrow'),
                 nextArrow: $('#custom-next-arrow'),
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 8000,
                 infinite: true,
                 slidesToShow: 3,
                 slidesToScroll: 1,
