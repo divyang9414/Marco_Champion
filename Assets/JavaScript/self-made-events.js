@@ -1,3 +1,6 @@
+document.getElementById('header-nav-toggle').addEventListener('click', function () {
+    document.getElementById('header-nav-links').classList.toggle('hidden');
+});
 document.getElementById('nav-toggle').addEventListener('click', function () {
     document.getElementById('nav-links').classList.toggle('hidden');
 });
@@ -8,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('home_navbar');
 
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 90) {
+        if (window.scrollY > 70) {
             header.classList.remove('header-hidden');
             header.classList.add('header-visible');
             navbar.classList.remove('opacity-1');
