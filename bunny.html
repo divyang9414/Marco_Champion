@@ -70,28 +70,28 @@
                     <ul class="flex flex-col md:gap-4 md:flex-row md:flex-wrap justify-center">
                         <li class="p-2 text-center">
                             <a href="./index.html" target="_self"
-                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Home
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff90] font-semibold no-underline hover:text-[#fff]">Home
                             </a>
                         </li>
                         <li class="p-2 text-center">
                             <a href="./myStory.html" target="_self"
-                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">My
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff90] font-semibold no-underline hover:text-[#fff]">My
                                 Story
                             </a>
                         </li>
                         <li class="p-2 text-center">
                             <a href="./reprogram.html" target="_self"
-                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Reprogram
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff90] font-semibold no-underline hover:text-[#fff]">Reprogram
                             </a>
                         </li>
                         <li class="p-2 text-center">
                             <a href="./shop.html" target="_self"
-                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Shop
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff90] font-semibold no-underline hover:text-[#fff]">Shop
                             </a>
                         </li>
                         <li class="p-2 text-center">
                             <a href="./contact.html" target="_self"
-                                class="text-[20px] fontSpriteGraffiti text-[#ffffff80] font-semibold no-underline hover:text-[#fff]">Contact
+                                class="text-[20px] fontSpriteGraffiti text-[#ffffff90] font-semibold no-underline hover:text-[#fff]">Contact
                             </a>
                         </li>
                     </ul>
@@ -106,12 +106,12 @@
         <section id="bunnyBanner" class="bunnyBanner py-[90px] relative">
             <div class="absolute inset-0 bg-black bg-opacity-[0.4]"></div>
             <div class="container relative z-[1]">
-                <a href="#" id="openPopup" class="block w-[80%] mx-auto">
+                <a href="#" id="openPopup" class="block w-[80%] md:w-full mx-auto">
                     <img src="./Assets/Images//bunny/Matrix-Thumbnail.gif"
-                        class="h-[320px] sm:h-[400px] lg:h-[500px] xl:h-[680px]" alt="">
+                        class="w-full h-[320px] sm:h-[400px] lg:h-[500px] xl:h-[680px]" alt="">
                 </a>
                 <!-- POPUP BOX START -->
-                <div id="popup" class="bg-white w-[80%] md:w-full max-w-md py-3 md:py-10 px-2 md:px-6 shadow-lg">
+                <div id="popup" class="bg-white w-[80%] md:w-[20%] py-3 md:py-8 px-2 md:px-6 shadow-lg">
                     <button id="closePopup" class="absolute top-2 right-2 text-gray-400 hover:text-gray-800">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                             class="w-6 h-6">
@@ -119,7 +119,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l12 12" />
                         </svg>
                     </button>
-                    <h2 class="TNR-bold text-[20px] font-bold mb-4 pr-7 sm:pr-0">input code to access rabbit whole</h2>
+                    <h2 class="text-[18px] font-bold mb-4 pr-7 sm:pr-0">Input code to access rabbit whole</h2>
                     <input type="text" placeholder="Input Code"
                         class="italic w-full p-2 border border-gray-300 focus:outline-none tracking-[1px]">
                     <button id="accessButton"
@@ -189,7 +189,7 @@
                     document.getElementById('popup').style.display = 'none';
                     document.getElementById('overlay').style.display = 'none';
                 } else {
-                    alert('Incorrect code. Please try again.');
+                    alert('Your access has been denied!');
                 }
                 document.querySelector('input[type="text"]').value = '';
             });

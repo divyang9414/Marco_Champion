@@ -6,6 +6,14 @@
   position: absolute;
   bottom: 0px;
   left: 16px;
+  z-index: 5 !important;
+}
+
+.bioStory{
+  background-image: url("../Images/Background-Special.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .bioStoryImage{

@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// MY STORY LIST ITEM ARROW HANDLING
 document.addEventListener('DOMContentLoaded', function () {
     const listItems = document.querySelectorAll('.motivList li');
     listItems.forEach((item, index) => {
@@ -41,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const arrows = document.querySelectorAll('.motivList img');
             arrows.forEach((arrow, arrowIndex) => {
                 if (arrowIndex === index) {
-                    arrow.classList.toggle('hide');
-                    arrow.classList.toggle('visible');
+                    arrow.classList.remove('hide');
+                    arrow.classList.add('visible');
                 } else {
                     arrow.classList.add('hide');
                     arrow.classList.remove('visible');
@@ -52,6 +53,63 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//MY STORY IMAGE HANDLING ON CHANGE OF LIST ITEM
+document.addEventListener('DOMContentLoaded', function () {
+    const listItems = document.querySelectorAll('.motivList li');
+    const images = {
+        image1: document.getElementById('image1'),
+        image2: document.getElementById('image2'),
+        image3: document.getElementById('image3')
+    };
+
+    const imageSources = {
+        item1: {
+            image1: './Assets/Images/myStory/CEO-of-MOTIV-1.png',
+            image2: './Assets/Images/myStory/CEO-of-MOTIV-2.png',
+            image3: './Assets/Images/myStory/CEO-of-MOTIV-3.png'
+        },
+        item2: {
+            image1: './Assets/Images/myStory/Serial-1.png',
+            image2: './Assets/Images/myStory/Serial-2.png',
+            image3: './Assets/Images/myStory/Serial-3.png'
+        },
+        item3: {
+            image1: './Assets/Images/myStory/Mind-1.png',
+            image2: './Assets/Images/myStory/Mind-2.png',
+            image3: './Assets/Images/myStory/Mind-3.png'
+        },
+        item4: {
+            image1: './Assets/Images/myStory/speaker-1.png',
+            image2: './Assets/Images/myStory/speaker-2.png',
+            image3: './Assets/Images/myStory/speaker-3.png'
+        },
+        item5: {
+            image1: './Assets/Images/myStory/Athlete-1.png',
+            image2: './Assets/Images/myStory/Athlete-2.png',
+            image3: './Assets/Images/myStory/Athlete-3.png'
+        },
+        item6: {
+            image1: './Assets/Images/myStory/Human-1.png',
+            image2: './Assets/Images/myStory/Human-2.png',
+            image3: './Assets/Images/myStory/Human-3.png'
+        }
+    };
+
+    listItems.forEach(item => {
+        item.addEventListener('click', function () {
+            const itemId = item.id;
+            const sources = imageSources[itemId];
+
+            if (sources) {
+                images.image1.src = sources.image1;
+                images.image2.src = sources.image2;
+                images.image3.src = sources.image3;
+            }
+        });
+    });
+});
+
+// ACCORDIAN HANDLING
 var accItem = document.getElementsByClassName('accordionItem');
 var accHD = document.getElementsByClassName('accordionItemHeading');
 for (i = 0; i < accHD.length; i++) {
