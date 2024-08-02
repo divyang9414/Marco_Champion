@@ -13,6 +13,9 @@
     <!-- META -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <!-- FANCY ICONS -->
     <link rel="stylesheet" href="Assets/CSS/fontawesome.all.min.css">
     <link rel="stylesheet" href="Assets/Fonts/BSicons/bootstrap-icons.min.css">
@@ -37,6 +40,7 @@
                     },
                     screens: {
                         xs: '320px',
+                        sm: '576px',
                         lg: '992px',
                         xl: '1200px',
                         xxl: '1400px',
@@ -103,8 +107,8 @@
         <section id="bioStory" class="bioStory">
             <div class="container">
                 <div class="flex flex-wrap overflow-hidden">
-                    <div class="w-full xl:w-1/2 py-12">
-                        <h2 class="text-[#001838] responsive-text font-bold pb-3">WHO IS MARCO CHAMPION?</h2>
+                    <div class="w-full xl:w-1/2 py-7 md:py-15">
+                        <h2 class="text-[26px] text-[#001838] responsive-text font-bold pb-3">WHO IS MARCO CHAMPION?</h2>
                         <p
                             class="text-[#001838] text-[14px] leading-[1.5rem] tracking-[0.04rem] font-bold text-justify">
                             Getting run over by a car was just the start—after beating the odds physically, I had to
@@ -157,21 +161,21 @@
         <!-- BIO STORY END -->
 
         <!-- MOTIV START -->
-        <section id="motiv" class="motiv py-15 relative  overflow-hidden">
+        <section id="motiv" class="motiv py-7 md:py-15 relative  overflow-hidden">
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             <div class="container relative z-10">
                 <div class="flex flex-wrap gap-y-12 xl:gap-x-8 xl:flex-nowrap">
-                    <div class="w-full sm:w-1/2 px-6 xl:px-0 xl:w-1/4">
+                    <div class="order-2 sm:order-1 w-full sm:w-1/2 px-6 xl:px-0 xl:w-1/4">
                         <img id="image1" src="./Assets/Images/myStory/CEO-of-MOTIV-1.png" alt="">
                     </div>
-                    <div class="w-full sm:w-1/2 px-6 xl:px-0 xl:w-1/4">
+                    <div class="order-3 sm:order-2 w-full sm:w-1/2 px-6 xl:px-0 xl:w-1/4">
                         <img id="image2" src="./Assets/Images/myStory/CEO-of-MOTIV-2.png" alt="">
                     </div>
-                    <div class="w-full sm:w-1/2 px-6 xl:px-0 xl:w-1/4">
+                    <div class="order-4 sm:order-3 w-full sm:w-1/2 px-6 xl:px-0 xl:w-1/4">
                         <img id="image3" src="./Assets/Images/myStory/CEO-of-MOTIV-3.png" alt="">
                     </div>
-                    <div class="w-full sm:w-1/2 px-6 xl:px-0 xl:w-1/4 h-[auto]">
-                        <ul class="motivList h-[100%] flex flex-col items-start text-white text-[24px] xl:text-[18px] xxl:text-[24px] font-semibold justify-between lg:py-16 xl:py-0">
+                    <div class="order-1 sm:order-4 w-full sm:w-1/2 px-6 xl:px-0 xl:w-1/4 h-[auto]">
+                        <ul class="motivList h-[100%] flex flex-col items-start text-white font-semibold justify-between lg:py-16 xl:py-0">
                             <li id="item1" class="flex items-center gap-x-3 cursor-pointer">
                                 <img src="./Assets/Images/myStory/story_arrow.png" class="w-[25px] h-[25px] visible" alt="">
                                 CEO of MOTIV
@@ -204,7 +208,7 @@
         <!-- MOTIV END -->
 
         <!-- PASSION START-->
-        <section id="passion" class="passion py-15">
+        <section id="passion" class="passion py-7 md:py-15">
             <div class="container">
                 <img src="./Assets/Images/myStory/StartupPassion.png" class="" alt="">
             </div>
@@ -212,35 +216,52 @@
         <!-- PASSION END -->
 
         <!-- FOLLOW SOCIAL MEDIA START -->
-        <section id="followSocialMedia" class="followSocialMedia py-15 relative  overflow-hidden">
+        <section id="followSocialMedia" class="followSocialMedia py-7 md:py-15 relative  overflow-hidden">
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             <div class="container relative z-10">
                 <div class="flex flex-wrap justify-between items-center">
                     <h2
-                        class="w-full sm:w-[auto] text-[20px] md:text-[24px] xl:text-[32px] tracking-[0.5px] text-[#c19752] font-semibold pb-[16px]">
+                        class="w-full lg:w-[auto] text-center text-[26px] md:text-[32px] lg:text-[28px] xl:text-[32px] tracking-[0.5px] text-[#c19752] font-semibold pb-[16px]">
                         FOLLOW MY JOURNEY ON SOCIAL MEDIA
                     </h2>
                     <div
-                        class="w-full sm:w-[auto] flex justify-between items-center gap-1 sm:gap-5 text-[34px] pb-[16px]">
+                        class="w-full lg:w-[auto] flex justify-center lg:justify-between items-center gap-1 sm:gap-5 text-[34px] pb-[16px]">
                         <a href="https://youtube.com/@marcothechampion?si=Q9wKW7O1zjUNI-Tf" class="text-[#c19752] no-underline" target="_blank">
-                            <i class="ri-youtube-fill"></i>
+                            <i class="text-[26px] sm:text-[32px] mx-2 ri-youtube-fill"></i>
                         </a>
                         <a href="https://www.instagram.com/marcothechampion?igsh=MzRlODBiNWFlZA==" class="text-[#c19752] no-underline" target="_blank">
-                            <i class="ri-instagram-line"></i>
+                            <i class="text-[26px] sm:text-[32px] mx-2 ri-instagram-line"></i>
                         </a>
                         <a href="https://twitter.com/marcochampion_" class="text-[#c19752] no-underline" target="_blank">
-                            <i class="ri-twitter-x-line"></i>
+                            <i class="text-[26px] sm:text-[32px] mx-2 ri-twitter-x-line"></i>
                         </a>
                         <a href="https://www.tiktok.com/@marcothechampion?_t=8l4fMYzpcVP&_r=1" class="text-[#c19752] no-underline" target="_blank">
-                            <i class="ri-tiktok-fill"></i>
+                            <i class="text-[26px] sm:text-[32px] mx-2 ri-tiktok-fill"></i>
                         </a>
                         <a href="https://www.facebook.com/marcochampion777?mibextid=JRoKGi" class="text-[#c19752] no-underline" target="_blank">
-                            <i class="ri-facebook-fill"></i>
+                            <i class="text-[26px] sm:text-[32px] mx-2 ri-facebook-fill"></i>
                         </a>
                     </div>
                 </div>
                 <div class="bg-white py-8 px-5">
-                    <div class="flex flex-wrap gap-y-12">
+                    <div id="followSocialMediaSwiper" class="followSocialMediaSwiper flex flex-wrap gap-y-12 xl:hidden">
+                        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 xl:w-1/5">
+                            <img src="./Assets/Images/myStory/1.png" alt="">
+                        </div>
+                        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 xl:w-1/5">
+                            <img src="./Assets/Images/myStory/2.png" alt="">
+                        </div>
+                        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 xl:w-1/5">
+                            <img src="./Assets/Images/myStory/3.png" alt="">
+                        </div>
+                        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 xl:w-1/5">
+                            <img src="./Assets/Images/myStory/4.png" alt="">
+                        </div>
+                        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 xl:w-1/5">
+                            <img src="./Assets/Images/myStory/5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hidden xl:flex flex-wrap gap-y-12">
                         <div class="w-full sm:w-1/2 lg:w-1/3 px-3 xl:w-1/5">
                             <img src="./Assets/Images/myStory/1.png" alt="">
                         </div>
@@ -266,14 +287,14 @@
 
     <!-- FOOTER START-->
     <footer id="footer" class="footer">
-        <div class="container">
-            <div class="footerBox flex justify-between">
-                <div class="footerBoxLeft py-[30px] sm:py-[60px] md:py-[100px] order-2 sm:order-1">
-                    <h2
-                        class="fontBlanka fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] lg:text-[40px] text-start mb-3 sm:mb-3 sm:pt-2">
-                        STAY MOTIVATED
-                    </h2>
-                    <div class="footerIcon flex justify-start gap-2">
+		<div class="container">
+			<div class="footerBox flex justify-between">
+				<div class="footerBoxLeft py-[30px] sm:py-[60px] md:py-[100px] order-2 sm:order-1">
+					<h2
+						class="fontBlanka fotterTitle text-white text-[28px] sm:text-[28px] md:text-[36px] lg:text-[40px] text-center sm:text-start mb-3 sm:mb-3 sm:pt-2">
+						STAY MOTIVATED
+					</h2>
+					<div class="footerIcon flex justify-center sm:justify-start gap-2">
 						<a href="https://youtube.com/@marcothechampion?si=Q9wKW7O1zjUNI-Tf">
 							<img src="./Assets/Images/Youtube.png" alt="YouTube">
 						</a>
@@ -287,31 +308,69 @@
 							<img src="./Assets/Images/facebook.png" alt="Facebook">
 						</a>
 					</div>
-                </div>
-                <div class="footerBoxRight flex relative py-6 sm:py-12 md:py-20 overflow-hidden order-1 sm:order-2">
-                    <ul class="flex justify-center items-center gap-y-8 flex-wrap w-full relative z-[5]">
-                        <li class="w-1/2 lg:text-center">
-                            <a href="./myStory.html" class="text-white text-[20px] fontSpriteGraffiti">MY STORY</a>
-                        </li>
-                        <li class="w-1/2 lg:text-center">
-                            <a href="./reprogram.html" class="text-white text-[20px] fontSpriteGraffiti">REPROGRAM</a>
-                        </li>
-                        <li class="w-1/2 lg:text-center">
-                            <a href="./shop.html" class="text-white text-[20px] fontSpriteGraffiti">SHOP</a>
-                        </li>
-                        <li class="w-1/2 lg:text-center">
-                            <a href="./contact.html" class="text-white text-[20px] fontSpriteGraffiti">CONTACT</a>
-                        </li>
-                    </ul>
-                    <img src="./Assets/Images/Signature.png" alt="" class="absolute">
-                </div>
-            </div>
-        </div>
-    </footer>
+				</div>
+				<div class="footerBoxRight flex relative py-[30px] sm:py-12 md:py-20 overflow-hidden order-1 sm:order-2">
+					<ul class="flex justify-center items-center gap-y-2 sm:gap-y-8 flex-wrap w-full relative z-[1]">
+						<li class="w-full sm:w-1/2 text-start pl-3 sm:text-center">
+							<a href="./myStory.html" class="text-white text-[20px] fontSpriteGraffiti">MY STORY</a>
+						</li>
+						<li class="w-full sm:w-1/2 text-start pl-3 sm:text-center">
+							<a href="./reprogram.html" class="text-white text-[20px] fontSpriteGraffiti">REPROGRAM</a>
+						</li>
+						<li class="w-full sm:w-1/2 text-start pl-3 sm:text-center">
+							<a href="./shop.html" class="text-white text-[20px] fontSpriteGraffiti">SHOP</a>
+						</li>
+						<li class="w-full sm:w-1/2 text-start pl-3 sm:text-center">
+							<a href="./contact.html" class="text-white text-[20px] fontSpriteGraffiti">CONTACT</a>
+						</li>
+					</ul>
+					<img src="./Assets/Images/Signature.png" alt="" class="absolute">
+				</div>
+			</div>
+		</div>
+	</footer>
     <!-- FOOTER END -->
 
     <!-- J-SCRIPT  &  J-QUERY START -->
     <data>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $('.followSocialMediaSwiper').slick({
+                prevArrow: $('#custom-prev-arrow'),
+                nextArrow: $('#custom-next-arrow'),
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        </script>
 		<script src="Assets/JavaScript/self-made-events.js"></script>
     </data>
     <!-- J-SCRIPT  &  J-QUERY END -->

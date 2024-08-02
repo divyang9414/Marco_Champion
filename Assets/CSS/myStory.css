@@ -17,7 +17,7 @@
 }
 
 .bioStoryImage{
-  height: 400px;
+  height: 350px;
 }
 
 .motiv {
@@ -58,6 +58,9 @@
 
 /* Extra Small (XS) screens */
 @media (min-width: 320px) {
+  .motivList li{
+    font-size: 20px;
+  }
 }
 
 /* Small (SM) screens */
@@ -66,7 +69,7 @@
     font-size: 24px;
   }
   .bioStoryImage{
-    height: 460px;
+    height: 400px;
   }
   .responsive-image {
     left: 32px;
@@ -79,7 +82,7 @@
     font-size: 28px;
   }
   .bioStoryImage{
-    height: 500px;
+    height: 450px;
   }
   .responsive-image {
     left: 48px;
@@ -93,6 +96,9 @@
   }
   .bioStoryImage{
     height: auto;
+  }
+  .motivList li{
+    font-size: 18px;
   }
   .responsive-image {
     left: 0px;
@@ -108,6 +114,9 @@
   .responsive-text {
     font-size: 40px;
   }
+  .motivList li{
+    font-size: 20px;
+  }
   .responsive-image {
     bottom: 172px;
     scale: 1.5;
@@ -119,8 +128,8 @@
   .responsive-text {
     font-size: 44px;
   }
-  .bioStoryImage{
-    /* height: 860px; */
+  .motivList li{
+    font-size: 20px;
   }
   .responsive-image {
     bottom: 42px;
@@ -132,6 +141,9 @@
 @media (min-width: 992px) {
   .responsive-text {
     font-size: 34px;
+  }
+  .motivList li{
+    font-size: 20px;
   }
   .responsive-image {
     bottom: 102px;
@@ -160,6 +172,9 @@
     bottom: 172px;
     left: 0px;
     scale: 1.44;
+  }
+  .motivList li{
+    font-size: 24px;
   }
 }
 

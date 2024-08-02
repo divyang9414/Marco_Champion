@@ -171,13 +171,13 @@ const joinNowSubPopup = document.getElementById('joinNowSubPopup');
 if (upgradeButton) {
     upgradeButton.addEventListener('click', function (event) {
         event.preventDefault();
-    
+
         const fullName = fullNameInput.value.trim();
         const emailAddress = emailAddressInput.value.trim();
-    
+
         let isValid = true;
         let errorMessage = '';
-    
+
         if (fullName === '' && emailAddress === '') {
             alert('Please fill all fields');
             isValid = false;
@@ -188,7 +188,7 @@ if (upgradeButton) {
             alert('Please enter a valid email address.');
             isValid = false;
         }
-    
+
         if (isValid) {
             console.log('Form submitted Successfully:', fullName, emailAddress);
             fullNameInput.value = '';
