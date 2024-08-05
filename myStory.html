@@ -30,28 +30,7 @@
     <link rel="stylesheet" href="Assets/CSS/myStory.css">
 
     <!-- TAILWIND -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    },
-                    screens: {
-                        xs: '320px',
-                        sm: '576px',
-                        lg: '992px',
-                        xl: '1200px',
-                        xxl: '1400px',
-                    },
-                    spacing: {
-                        '15': '60px',
-                    },
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="Assets/CSS/tailwind.css">
 </head>
 
 <body>
@@ -210,7 +189,11 @@
         <!-- PASSION START-->
         <section id="passion" class="passion py-7 md:py-15">
             <div class="container">
-                <img src="./Assets/Images/myStory/StartupPassion.png" class="" alt="">
+                <!-- <img src="./Assets/Images/myStory/StartupPassion.png" class="" alt=""> -->
+                <div style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/430912171?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="K SWISS MARCO STORY">
+                    </iframe>
+                </div>
             </div>
         </section>
         <!-- PASSION END -->
@@ -295,16 +278,16 @@
 						STAY MOTIVATED
 					</h2>
 					<div class="footerIcon flex justify-center sm:justify-start gap-2">
-						<a href="https://youtube.com/@marcothechampion?si=Q9wKW7O1zjUNI-Tf">
+						<a href="https://youtube.com/@marcothechampion?si=Q9wKW7O1zjUNI-Tf" target="_blank">
 							<img src="./Assets/Images/Youtube.png" alt="YouTube">
 						</a>
-						<a href="https://www.instagram.com/marcothechampion?igsh=MzRlODBiNWFlZA==">
+						<a href="https://www.instagram.com/marcothechampion?igsh=MzRlODBiNWFlZA==" target="_blank">
 							<img src="./Assets/Images/instagram2.png" alt="Instagram">
 						</a>
-						<a href="https://www.tiktok.com/@marcothechampion?_t=8l4fMYzpcVP&_r=1">
+						<a href="https://www.tiktok.com/@marcothechampion?_t=8l4fMYzpcVP&_r=1" target="_blank">
 							<img src="./Assets/Images/tiktok.png" alt="TikTok">
 						</a>
-						<a href="https://www.facebook.com/marcochampion777?mibextid=JRoKGi">
+						<a href="https://www.facebook.com/marcochampion777?mibextid=JRoKGi" target="_blank">
 							<img src="./Assets/Images/facebook.png" alt="Facebook">
 						</a>
 					</div>
@@ -371,6 +354,7 @@
                 ]
             });
         </script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
 		<script src="Assets/JavaScript/self-made-events.js"></script>
     </data>
     <!-- J-SCRIPT  &  J-QUERY END -->
